@@ -1,3507 +1,1332 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ru">
-<head>
-<meta name="viewport" content="width=device-width" />
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
-<meta name="generator" content="vBulletin 3.7.3" />
-
-<meta name="keywords" content="виндсерфинг форум windsurfing Russia" />
-<meta name="description" content="Race You! Форум про виндсерфинг." />
-
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<!-- CSS Stylesheet -->
-<style type="text/css" id="vbulletin_css">
-/**
-* vBulletin 3.7.3 CSS
-* Style: 'Raceyouru'; Style ID: 4
-*/
-body
-{
-	background: #D9D9D9;
-	color: #000000;
-	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-	margin: 5px 10px 10px 10px;
-	padding: 0px;
-}
-a:link, body_alink
-{
-	color: #22229C;
-}
-a:visited, body_avisited
-{
-	color: #22229C;
-}
-a:hover, a:active, body_ahover
-{
-	color: #FF4400;
-}
-.page
-{
-	background: #D9D9D9;
-	color: #000000;
-}
-td, th, p, li
-{
-	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-}
-.tborder
-{
-	background: #CCCCCC;
-	color: #000000;
-	border: 1px solid #5A5B5E;
-}
-.tcat
-{
-	background: #757677;
-	color: #FFFFFF;
-	font: bold 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-	background-image: repeating-linear-gradient(to right, #6C6C6C 1px, #414141 2px, #272727 3px, #414141 4px, #6C6C6C 5px);
-}
-.tcat a:link, .tcat_alink
-{
-	color: #ffffff;
-	text-decoration: none;
-}
-.tcat a:visited, .tcat_avisited
-{
-	color: #ffffff;
-	text-decoration: none;
-}
-.tcat a:hover, .tcat a:active, .tcat_ahover
-{
-	color: #ffffff;
-	text-decoration: underline;
-}
-.thead
-{
-	background: #D9D9D9;
-	color: #000000;
-	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-}
-.thead a:link, .thead_alink
-{
-	color: #000000;
-}
-.thead a:visited, .thead_avisited
-{
-	color: #000000;
-}
-.thead a:hover, .thead a:active, .thead_ahover
-{
-	color: #000000;
-	text-decoration: underline;
-}
-.tfoot
-{
-	background: #3F4040;
-	color: #E0E0F6;
-}
-.tfoot a:link, .tfoot_alink
-{
-	color: #E0E0F6;
-}
-.tfoot a:visited, .tfoot_avisited
-{
-	color: #E0E0F6;
-}
-.tfoot a:hover, .tfoot a:active, .tfoot_ahover
-{
-	color: #FFF;
-	text-decoration: underline;
-}
-.alt1, .alt1Active
-{
-	background: #FFFFFF;
-	color: #000000;
-}
-.alt2, .alt2Active
-{
-	background: #FFFFFF;
-	color: #000000;
-}
-.inlinemod
-{
-	background: #FFFFCC;
-	color: #000000;
-}
-.wysiwyg
-{
-	background: #F5F5FF;
-	color: #000000;
-	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-	margin: 5px 10px 10px 10px;
-	padding: 0px;
-}
-.wysiwyg a:link, .wysiwyg_alink
-{
-	color: #22229C;
-}
-.wysiwyg a:visited, .wysiwyg_avisited
-{
-	color: #22229C;
-}
-.wysiwyg a:hover, .wysiwyg a:active, .wysiwyg_ahover
-{
-	color: #FF4400;
-}
-textarea, .bginput
-{
-	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-}
-.bginput option, .bginput optgroup
-{
-	font-size: 10pt;
-	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-}
-.button
-{
-	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-}
-select
-{
-	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-}
-option, optgroup
-{
-	font-size: 11px;
-	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-}
-.smallfont
-{
-	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-}
-.time
-{
-	color: #666686;
-}
-.navbar
-{
-	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-}
-.highlight
-{
-	color: #FF0000;
-	font-weight: bold;
-}
-.fjsel
-{
-	background: #3E5C92;
-	color: #E0E0F6;
-}
-.fjdpth0
-{
-	background: #F7F7F7;
-	color: #000000;
-}
-.panel
-{
-	background: #E4E7F5 url(images/gradients/gradient_panel.gif) repeat-x top left;
-	color: #000000;
-	padding: 10px;
-	border: 2px outset;
-}
-.panelsurround
-{
-	background: #D1D4E0 url(images/gradients/gradient_panelsurround.gif) repeat-x top left;
-	color: #000000;
-}
-legend
-{
-	color: #22229C;
-	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-}
-.vbmenu_control
-{
-	background: #757677;
-	color: #FFFFFF;
-	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-	padding: 3px 6px 3px 6px;
-	white-space: nowrap;
-}
-.vbmenu_control a:link, .vbmenu_control_alink
-{
-	color: #FFFFFF;
-	text-decoration: none;
-}
-.vbmenu_control a:visited, .vbmenu_control_avisited
-{
-	color: #FFFFFF;
-	text-decoration: none;
-}
-.vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover
-{
-	color: #FFFFFF;
-	text-decoration: underline;
-}
-.vbmenu_popup
-{
-	background: #BBC7CE;
-	color: #000000;
-	border: 1px solid #5A5B5E;
-}
-.vbmenu_option
-{
-	background: #E6E7E8;
-	color: #000000;
-	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-	white-space: nowrap;
-	cursor: pointer;
-}
-.vbmenu_option a:link, .vbmenu_option_alink
-{
-	color: #22229C;
-	text-decoration: none;
-}
-.vbmenu_option a:visited, .vbmenu_option_avisited
-{
-	color: #22229C;
-	text-decoration: none;
-}
-.vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover
-{
-	color: #FFFFFF;
-	text-decoration: none;
-}
-.vbmenu_hilite
-{
-	background: #8A949E;
-	color: #FFFFFF;
-	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
-	white-space: nowrap;
-	cursor: pointer;
-}
-.vbmenu_hilite a:link, .vbmenu_hilite_alink
-{
-	color: #FFFFFF;
-	text-decoration: none;
-}
-.vbmenu_hilite a:visited, .vbmenu_hilite_avisited
-{
-	color: #FFFFFF;
-	text-decoration: none;
-}
-.vbmenu_hilite a:hover, .vbmenu_hilite a:active, .vbmenu_hilite_ahover
-{
-	color: #FFFFFF;
-	text-decoration: none;
-}
-body {
-background-size: contain;
--webkit-background-size: contain;
--o-background-size: contain;
--moz-background-size: contain;
-}
-
-.header-wrapper {
-    padding: 0 0px;
-}
-html.range_0 .header-wrapper,
-html.range_1 .header-wrapper,
-html.range_2 .header-wrapper {
-    padding: 0;
-}
-
-table {
-    border-spacing: 1px!important;
-}
-.button {
-    min-height: 24px;
-    position: relative;
-    top: -2px;
-    left: 2px;
-}
-.fdforumtools {
-    padding: 0 0px!important;
-}
-/* rounded corners */
-.newthread,
-.st_links a,
-.newreplybutton,
-.buttondrop2,
-.fdforumtools,
-.newthreadbutton,
-.advertise,
-#forum-stats a.btn,
-.regbuttontop a.btn,
-.bginput,
-.button,
-.st_search input[type='text']{
--webkit-border-radius: 0px!important;
--moz-border-radius: 0px!important;
-border-radius: 0px!important;
-}
-#notifications_menu .thead {
-    background: linear-gradient(#2D2D2D, #757677)!important;
-}
-.tborderindex,.header,.myfixedtable {
-    border-collapse: separate!important;
-    border-spacing: 0px!important;
-}
-.tborderindex {
-    border-spacing: 1px!important;
-}
-.tborderindex thead td{
-    white-space:nowrap;
-}
-.custompostbit2 .alt2, .custompostbit .alt2 {
-    background: #FFFFFF!important;
-}
-#username_box {
-	color: #000!important;
-	text-shadow: 0px 0px 0 transparent!important;
-}
-.mypostbit .alt2 {
-    background: #e1e4f2 none!important;
-    border-bottom:1px solid #d1d1e1!important;
-}
-
-.pagenav td .smallfont,
-.iconlegend .smallfont {
-	color: #000!important;
-}
-.fdforumtools {
-    border-bottom-width: 1px!important;
-}
-.navbar a,
-.lastpostbycolor a {
-    color: #22229C!important;
-}
-.wgo .tcat {#7D7E82;}
-.button {
-    padding: 2px 6px 3px!important;
-    border-width: 2px!important;
-    border-style: outset!important;
-    border-color: buttonface!important;
-}
-.footerselector .tfoot {
-    background: #3F4040!important;
-    color: #E0E0F6!important;
-    opacity: 1!important;
-}
-.st_bg {
-    background: #D1D1E1!important;
-}
-.vbmenu_control {
-    color: #fff!important;
-    background: #757677 none!important;
-    padding: 3px 6px 3px 6px!important;
-}
-.mytoolbar .tcat {#7D7E82}
-.mainnavbar, .mainnavbar .vbmenu_control {
-    background-image: linear-gradient(#008BC5, #211753)!important;
-}
-.pagenav td.alt1 {
-    background: #F5F5FF!important;
-    color: #000000!important;
-}
-.pagenav td.alt2 {
-    background: #E1E4F2!important;
-    color: #000000!important;
-}
-.timestyle .time, .timestyle a, .nextprevstyle a {
-    color: #22229C!important;
-}
-.hidecopytext .smallfont a, .hidecopytext .smallfont,
-.timestyle, .nextprevstyle {
-    color: #000!important;
-    text-shadow: 0px 0px 0 transparent!important;
-}
-.usercpsidebar {
-    width: 158px!important;
-}
-.usercpmainContent {
-    margin-left: 200px!important;
-}
-.thead2 {
-    background: linear-gradient(#2D2D2D, #757677)!important;
-    font-family: Verdana, sans-serif!important;
-    font-weight: normal!important;
-    font-size: 11px!important;
-}
-.mobilenavwrap .blockhead{
-    opacity: 1!important;
-    margin-top:0px!important;
-    background: linear-gradient(#2D2D2D, #757677)!important;
-}
-.mobilenavwrapper{
-    border: 1px solid #5A5B5E;
-    border-top: 0px!important;
-    margin-bottom:20px;
-}
-embed,object {
-    max-width: 100%; 
-}
-.logintable .material-icons{display: none;}
-.mytoolbar, .fdforumtools, .userinfotable {
-    border-spacing: 1px!important;
-}
-.mypostbit .userinfotable {
-    border-spacing: 6px!important;
-}
-.bbcodestyle .alt2{background: #E6E6E6!important;border:1px inset!important;padding:5px!important;}
-.bbcodestyle .myfixedtablequote{border-collapse: separate!important;border-spacing: 2px!important;}
-/* ***** styling for 'big' usernames on postbit etc. ***** */
-.bigusername { font-size: 14pt; }
-
-/* ***** small padding on 'thead' elements ***** */
-td.thead, th.thead, div.thead { padding: 4px; }
-
-/* ***** basic styles for multi-page nav elements */
-.pagenav a { text-decoration: none; }
-.pagenav td { padding: 2px 4px 2px 4px; }
-
-/* ***** de-emphasized text */
-.shade, a.shade:link, a.shade:visited { color: #777777; text-decoration: none; }
-a.shade:active, a.shade:hover { color: #FF4400; text-decoration: underline; }
-.tcat .shade, .thead .shade, .tfoot .shade { color: #DDDDDD; }
-
-/* ***** define margin and font-size for elements inside panels ***** */
-.fieldset { margin-bottom: 6px; }
-.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; }
-/* XXXXXXX--------------------- RANGE 0  --------------------XXXXXX */
-/* XXXXXXX---- Style range0 overrides for: 0px to 320px -----XXXXXX */
-/* XXXXXXX--------------------- RANGE 0  --------------------XXXXXX */
-html.range_0 .pagenav .tborder{margin:0 auto!important}
-html.range_0 .newthread,
-html.range_0 .buttondrop2{background:transparent none!important}
-html.range_0 .bbcodestyle .myfixedtablequote .converttodiv{
-border:1px inset!important;padding:5px!important;
-}
-html.range_0 .legacy .headstyle {
-    border: 0px!important;
-    background: linear-gradient(#2D2D2D, #757677)!important;
-    height: 30px!important;
-}
-html.range_0 .legacy .headstyle .thead a{color: #FFFFFF!important;}
-html.range_0 .legacy .thead{padding:0px 4px!important;}
-html.range_0 .legacy .headstyle .thead {
-background: linear-gradient(#2D2D2D, #757677)!important;
-    color: #FFFFFF!important;
-}
-html.range_0 .legacy .custompostbit .alt1 .postbitcontrol2{width:98%!important;}
-html.range_0 .legacy .custompostbit .alt2{ 
-    background: #e1e4f2 none!important;
-    border-bottom:1px solid #d1d1e1!important;
-    min-height: 33px!important;
-}
-html.range_0 .tfoot a, 
-html.range_0 .tfoot .smallfont, 
-html.range_0 .tfoot .smallfont a{    color: #E0E0F6!important;}
-html.range_0 .tborderindex thead .hideonmobile{
-    display:none;
-}
-html.range_0 .footerselector .tfoot a,
-html.range_0 .footerselector .tfoot .smallfont,
-html.range_0 .footerselector .tfoot .smallfont a{color: #fff!important;}
-html.range_0 .mainmenu .vbmenu_control {
-    padding-left:0px!important;
-    padding-right:0px!important;
-}
-html.range_0 .custompostbit .alt1{border:0px!important}
-html.range_0 .pagenav .tborder {
-    background: #F4F4F4 none!important;
-}
-html.range_0 .custompostbit2 {
-    display: block;
-    width: 100%!important;
-}
-html.range_0 .mainnavbar .vbmenu_control {
-    border-bottom: 1px solid #869BBF!important;
-}
-html.range_0 .custompostbit .alt2,
-html.range_0 .legacy .headstyle .thead {
- border:0px!important;
-}
-html.range_0 .custompostbit2 .alt1,
-html.range_0 .custompostbit2 .alt2 {
-    display: block!important;
-    float: none!important;
-    width:100%!important;
-}
-html.range_0 .custompostbit2 .alt1 {
-    padding:5px 0px!important;
-    border:0px!important;
-}
-html.range_0 .custompostbit2 .alt2 {
-    background: #f5f5f5!important;
-    padding:5px 0px!important;
-    border:0px!important;
-}
-html.range_0 #vB_Editor_001_controls img{display:none}
-html.range_0 .mypostimg .tborder{width:280px!important;}
-html.range_0 .st_bg td{display:block;width:100%;padding:0px;}
-html.range_0 .st_bg div{padding:5px}
-html.range_0 .logintable td{display:table-cell!important;padding:3px 5px!important;}
-html.range_0 .logintable .bginput {
-    width: 110px!important;
-}
-html.range_0 .logintable .loginiconsize  {
-    width: 24px!important;
-}
-html.range_0 .footerselector .tfoot {display:block;width:100%;padding:0px;}
-html.range_0 .footerselector .tfoot div {padding:5px;}
-html.range_0 .footerselector .tfoot select {margin:5px;}
-html.range_0 .logintable .material-icons{display: block;}
-html.range_0 .userinfotable .usernametd{white-space:normal}
-
-/* end range 0-320 */
-/* XXXXXXX--------------------- RANGE 1 --------------------XXXXXX */
-/* XXXXXXX  Style range1 overrides for: 320px to 480px XXXXXX----- */
-/* XXXXXXX--------------------- RANGE 1 --------------------XXXXXX */
-html.range_1 .pagenav .tborder{margin:0 auto!important}
-html.range_1 .newthread,
-html.range_1 .buttondrop2{background:transparent none!important}
-html.range_1 .bbcodestyle .myfixedtablequote .converttodiv{
-border:1px inset!important;padding:5px!important;
-}
-html.range_1 .legacy .headstyle {
-    border: 0px!important;
-background: linear-gradient(#2D2D2D, #757677)!important;
-height: 30px!important;
-}
-html.range_1 .legacy .headstyle .thead a{color: #FFFFFF!important;}
-html.range_1 .legacy .thead{padding:0px 4px!important;}
-html.range_1 .legacy .headstyle .thead {
-background: linear-gradient(#2D2D2D, #757677)!important;
-    color: #FFFFFF!important;
-}
-html.range_1 .legacy .custompostbit .alt1 .postbitcontrol2{width:98%!important;}
-html.range_1 .legacy .custompostbit .alt2{ 
-    background: #e1e4f2 none!important;
-    border-bottom:1px solid #d1d1e1!important;
-    min-height: 33px!important;
-}
-html.range_1 .tfoot a, 
-html.range_1 .tfoot .smallfont, 
-html.range_1 .tfoot .smallfont a{    color: #E0E0F6!important;}
-html.range_1 .tborderindex thead .hideonmobile{
-    display:none;
-}
-html.range_1 body {
-    margin:0px!important
-}
-html.range_1 .footerselector .tfoot a,
-html.range_1 .footerselector .tfoot .smallfont,
-html.range_1 .footerselector .tfoot .smallfont a{color: #fff!important;}
-html.range_1 .pagenav td {
-    border-left: 0px!important;
-    border-right: 0px!important;
-    border-bottom: 0px!important;
-}
-html.range_1 .mainmenu .vbmenu_control {
-    padding-left:0px!important;
-    padding-right:0px!important;
-}
-html.range_1 .custompostbit .alt1{border:0px!important}
-html.range_1 .pagenav .tborder {
-    background: #F4F4F4 none!important;
-}
-html.range_1 .pagenav td {
-    font-weight: normal;
-    min-width: 12px!important;
-    padding: 3px 8px;
-}
-html.range_1 .pagenav td {
-    margin-right: 2px;
-    display: inline-block;
-    border-left: 1px solid #eee;
-    border-right: 1px solid #f5f5f5;
-    border-bottom: 1px solid #f5f5f5;
-}
-html.range_1 .mainnavbar .vbmenu_control {
-    border-bottom: 1px solid #869BBF!important;
-}
-html.range_1 .custompostbit .alt2,
-html.range_1 .legacy .headstyle .thead {
- border:0px!important;
-}
-html.range_1 .custompostbit2 .alt1,
-html.range_1 .custompostbit2 .alt2 {
-    background: transparent none!important;
-}
-html.range_1 .mypostimg .tborder{width:100%!important;}
-html.range_1 .st_bg td{display:block;width:100%;padding:0px;}
-html.range_1 .st_bg div{padding:5px}
-html.range_1 .logintable td{display:table-cell!important;padding:3px 5px!important;}
-html.range_1 .logintable .bginput  {
-    width: 130px!important;
-}
-html.range_1 .logintable .loginiconsize  {
-    width: 24px!important;
-}
-
-html.range_1 .footerselector .tfoot {display:block;width:100%;padding:0px;}
-html.range_1 .footerselector .tfoot div {padding:5px;}
-html.range_1 .footerselector .tfoot select {margin:5px;}
-html.range_1 .logintable .material-icons{display: block;}
-html.range_1 .userinfotable .usernametd{white-space:normal}
-
-/* end range1 320-480 */
-
-
-/* XXXXXXX--------------------- RANGE 2 --------------------XXXXXX */
-/* XXXXXXX--- Style range2 overrides for: 480px to 780px ---XXXXXX */
-/* XXXXXXX--------------------- RANGE 2 --------------------XXXXXX */
-html.range_2 .tborderindex thead .hideonmobile{
-    display:none;
-}
-html.range_2 .mainnavbar .vbmenu_control {
-    border-bottom: 1px solid #869BBF!important;
-}
-html.range_2 .footerselector .tfoot a,
-html.range_2 .footerselector .tfoot .smallfont,
-html.range_2 .footerselector .tfoot .smallfont a{color: #fff!important;}
-html.range_2 .userinfotable .usernametd{white-space:normal}
-
-/* Desktops and laptops ----------- */
-/* XXXXXXX--------------------- RANGE 5 --------------------XXXXXX */
-/* XXXXXXX-------- Style overrides for: above 1280px -------XXXXXX */
-/* XXXXXXX--------------------- RANGE 5 --------------------XXXXXX */
-html.range_4 .userinfodetails{width:100%;}
-html.range_5 .userinfodetails{width:100%;}
-html.range_5 .userinfotable .usernametd{white-space:nowrap}
-
-.infouser { border: 1px solid #101A2C;background-image: linear-gradient(#008BC5, #211753);margin-top: 2px;padding: 5px 3px 5px 5px; color: #FFF}
-.infouser a {color: #fff;}
-.infouser a:hover {color: #fff;}
-
-.spoiler {
-    color: #000;
-    display: inline-block;
-}
-.reputation_ {color: #fff !important; margin-left: 1em;}
-
-html.range_0 .post_thanks_postbit_legacy td,
-html.range_1 .post_thanks_postbit_legacy td {
- display: block; width:100%; box-sizing: border-box;
-}
-
-.postbit-icons img {vertical-align: middle;}
-
-@media screen and (max-width: 700px) {
-  .header-wrapper table td { display: block; }
-  .header-wrapper table td img { max-width: 100%; height: auto; }
-}
-</style>
-<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_important.css?v=373" />
-
-
-<!-- / CSS Stylesheet -->
-
-<script type="text/javascript" src="clientscript/yui/yahoo-dom-event/yahoo-dom-event.js?v=373"></script>
-<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=373"></script>
-<script type="text/javascript">
-<!--
-var SESSIONURL = "";
-var SECURITYTOKEN = "1745775901-14bdb4c2617747c24a1d7db001e8271a72ba24f3";
-var IMGDIR_MISC = "https://www.raceyou.ru/images/misc";
-var vb_disable_ajax = parseInt("0", 10);
-// -->
-</script>
-<script type="text/javascript" src="clientscript/vbulletin_global.js?v=373"></script>
-<script type="text/javascript" src="clientscript/vbulletin_menu.js?v=373"></script>
-
-
-
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
-<script type="text/javascript">
-// Called by Adapt.js
-function myCallback(i, width) {
-  // Alias HTML tag.
-  var html = document.documentElement;
-
-  // Find all instances of range_NUMBER and kill 'em.
-  html.className = html.className.replace(/(\s+)?range_\d/g, '');
-
-  // Check for valid range.
-  if (i > -1) {
-    // Add class="range_NUMBER"
-    html.className += ' range_' + i;
-  }
-
-  // Note: Not making use of width here, but I'm sure
-  // you could think of an interesting way to use it.
-}
-
-// Edit to suit your needs.
-var ADAPT_CONFIG = {
-  // false = Only run once, when page first loads.
-  // true = Change on window resize and page tilt.
-  dynamic: true,
-
-  // Optional callback... myCallback(i, width)
-  callback: myCallback,
-
-  // First range entry is the minimum.
-  // Last range entry is the maximum.
-  // Separate ranges by "to" keyword.
-  range: [
-    '0 to 320',
-    '320 to 480',
-    '480 to 780',
-    '780 to 980',
-    '980 to 1280',
-    '1280'
-  ]
-};
-</script>
-<script type="text/javascript" src="https://www.raceyou.ru/images/raceyouru/js/adapt.min.js"></script>
-<script type="text/javascript">
-  'article aside footer header nav section time'.replace(/\w+/g,function(n){document.createElement(n)})
-</script>
-
-<link href="https://www.raceyou.ru/images/raceyouru/css/stvb3r.css" rel="stylesheet" type="text/css" />
-<link href="https://www.raceyou.ru/images/raceyouru/css/st-responsive.css" rel="stylesheet" type="text/css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script type="text/javascript">
-jQuery(function(){
-    $(".mobilenavblock").css("display","none");
-});
-</script>
-
-<!--[if IE]>
-<link href="images/raceyouru/css/iecssfix.css" rel="stylesheet" type="text/css" />
-<![endif]-->
-<!--[if lte IE 7]>
-<link href="images/raceyouru/css/iesevencssfix.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
-</style>
-<![endif]--><script type="text/javascript" src="https://www.raceyou.ru/clientscript/ncode_imageresizer.js?v=1.0.2"></script>
-<script type="text/javascript">
-<!--
-NcodeImageResizer.MODE = 'newwindow';
-
-NcodeImageResizer.MAXWIDTH = 1100;
-NcodeImageResizer.MAXHEIGHT = 2500;
-
-
-NcodeImageResizer.MAXWIDTHSIGS = 400;
-NcodeImageResizer.MAXHEIGHTSIGS = 100;
-
-NcodeImageResizer.BBURL = 'https://www.raceyou.ru';
-
-vbphrase['ncode_imageresizer_warning_small'] = 'Нажмите здесь, чтобы посмотреть исходное изображение.';
-vbphrase['ncode_imageresizer_warning_filesize'] = 'Это изображение было изменено. Нажмите здесь, чтобы просмотреть исходное изображение. Оригинальное изображение изменено %1$s x %2$s и весит %3$s КБ.';
-vbphrase['ncode_imageresizer_warning_no_filesize'] = 'Это изображение было изменено. Нажмите здесь, чтобы просмотреть исходное изображение. Оригинальное изображение измерено %1$s x %2$s.';
-vbphrase['ncode_imageresizer_warning_fullsize'] = 'Нажмите здесь, чтобы просмотреть маленькое изображение.';
-//-->
-</script>
-
-<style type="text/css">
-
-table.ncode_imageresizer_warning {
-background: #d9d9d9; 
-color: #000000; 
-border: 1px solid #939393; 
-	cursor: pointer;
-}
-
-table.ncode_imageresizer_warning td {
-	font-size: 10px;
-	vertical-align: middle;
-	text-decoration: none;
-}
-
-table.ncode_imageresizer_warning td.td1 {
-	padding: 5px;
-}
-
-table.ncode_imageresizer_warning td.td1 {
-	padding: 2px;
-}
-
-</style>
-	<title>RaceYou! Всероссийский виндсерфинг форум - Пользователи</title>
-</head>
-<body>
-<!-- logo -->
-<div id="top" class="header-wrapper">
-<table class="header" border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
-<tr>
-	<td class="logo" align="left"><a href="/"><img src="https://www.raceyou.ru/images/mlogo_01.jpg" border="0" alt="RaceYou! Всероссийский виндсерфинг форум" /></a></td>
-	<td align="right" id="header_right_cell">
-		&nbsp;
-	</td>
-	<td align="right">
-	
-
-
-
-
-
-
-
-
-
-
-
-	</td>
-</tr>
-</table>
-</div>
-<!-- /logo -->
-
-<!-- content table -->
-<!-- open content container -->
-
-<div align="center">
-	<div class="page" style="width:100%; text-align:left">
-		<div style="padding:0px 5px 0px 5px" align="left" class="paddingmobile">
-
-
-
-
-
-<br />
-
-<!-- breadcrumb, login, pm info -->
-<table class="tborder st_bg" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-<tr>
-	<td class="alt1" width="100%">
-		
-			<table cellpadding="0" cellspacing="0" border="0">
-			<tr valign="bottom">
-				<td><a href="#" onclick="history.back(1); return false;"><img src="https://www.raceyou.ru/images/misc/navbits_start.gif" alt="Вернуться" border="0" /></a></td>
-				<td class="hideonmobile">&nbsp;</td>
-				<td width="100%"><span class="navbar"><a href="/" accesskey="1">RaceYou! Всероссийский виндсерфинг форум</a></span> </td>
-			</tr>
-			<tr>
-				<td class="navbar" style="font-size:10pt; padding-top:1px" colspan="3"><a href="/memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=1"><img class="inlineimg" src="https://www.raceyou.ru/images/misc/navbits_finallink_ltr.gif" alt="Перезагрузить страницу" border="0" /></a> <strong>
-	Пользователи
-
-</strong></td>
-			</tr>
-			</table>
-		
-	</td>
-
-	<td class="alt2" nowrap="nowrap">
-	<div class="smallfont">
-		<strong>Добро пожаловать, <a href="member.php?u=12638">mihski</a>.</strong><br />
-		Ваш последний визит: 27.04.2025 в <span class="time">18:56</span>
-
-		
-			<div><a href="private.php">Личные сообщения</a>: Новых 0, всего 23.</div>
-		
-
-		
-	</div>
-	</td>
-
-</tr>
-</table>
-<!-- / breadcrumb, login, pm info -->
-
-
-<!-- nav buttons bar -->
-<div class="mobilenavwrapper">
-<div class="mobilenavwrap collapse"> 
-<a class="home" href="index.php"><img src="https://www.raceyou.ru/images/raceyouru/homeicon.png" alt="Home" /></a>
-<a class="iconnew" href="search.php?do=getnew&exclude=81,83,84,85,133,101,88,87,82,91,92,93,134,102,129,103,136,137,138,142,177,145,171,36,38,131,111,180" accesskey="2""><img src="images/raceyouru/icon_new.png" alt="new" /></a>
-<a class="collapse" style="float:right" href="#top" onclick="return toggle_collapse('forumbit_')"><img src="https://www.raceyou.ru/images/raceyouru/burgericon.png" alt="Menu" /></a>
-  <h4 class="blockhead">Menu</h4>
-</div>
-<div id="collapseobj_forumbit_" style="" class="mobilenavblock">
-<!-- IE7 USER NAVBAR -->
-<!-- IE7 END USER NAVBAR -->
-
-<!-- nav buttons bar -->
-<div class="mainnavbar" style="padding:1px; border-top-width:0px">
-	<table class="mainmenu" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
-	<tr align="center">
-<td class="vbmenu_control"><a href="http://www.raceyou.ru/search.php?do=getnew&exclude=
-81,83,84,85,133,101,88,87,82,91,92,93,134,102,129,103,136,137,138,142,177,145,171,36,105,38,131">
-<img src="/images/misc/news.gif" alt="" border="0" height="9" width="8" />&nbsp;New</a></td>
-		
-			<td class="vbmenu_control"><a href="usercp.php">Мой кабинет</a></td>
-		
-		
-		<td class="vbmenu_control"><a rel="bestuser" href="/sailnumbers.php">Sail numbers</a></td><td class="vbmenu_control"><a href="http://www.raceyou.ru/blog.php?do=bloglist"><img src="/images/misc/bl.gif" alt="" border="0" height="9" width="12"/>&nbsp;Блоги</a></td><td class="vbmenu_control"><a href="https://www.raceyou.ru/gallery"><img src="/images/misc/fotogal_ico.gif" alt="Фотографии" border="0" height="9" width="13" />
-Фотографии</a></td>
-		<td class="vbmenu_control"><a href="faq.php" accesskey="5">Правила</a></td>
-
-                <td class="vbmenu_control"><a href="competitions.php">Календарь соревнований</a></td>
-
-		
-			<td class="vbmenu_control"><a href="memberlist.php">Пользователи</a></td>
-		
-		
-			
-				
-				<td class="vbmenu_control"><a href="search.php?do=getnew" accesskey="2">Все новые сообщения</a></td>
-				
-				<td class="vbmenu_control"><a id="navbar_search" href="search.php" accesskey="4" rel="nofollow">Поиск</a> <script type="text/javascript"> vbmenu_register("navbar_search"); </script></td>
-			
-			
-				<td class="vbmenu_control"><a id="usercptools" href="/memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=1&amp;nojs=1#usercptools" accesskey="3">Навигация</a> <script type="text/javascript"> vbmenu_register("usercptools"); </script></td>
-			
-		
-		
-		
-			<td class="vbmenu_control"><a href="login.php?do=logout&amp;logouthash=1745775901-14bdb4c2617747c24a1d7db001e8271a72ba24f3" onclick="return log_out('Вы действительно хотите выйти?')">Выход</a></td>
-		
-		</tr>
-	</table>
-</div>
-<!-- / nav buttons bar -->
-
-
-</div></div><!-- / end mobilenavwrapper 2 divs collapse -->
-
-
-<br class="forumtitlehide"/>
-
-
-<form action="profile.php?do=dismissnotice" method="post" id="notices">
-<input type="hidden" name="do" value="dismissnotice" />
-<input type="hidden" name="securitytoken" value="1745775901-14bdb4c2617747c24a1d7db001e8271a72ba24f3" />
-<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
-<input type="hidden" name="url" value="" />
-	<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-	<tr>
-		<td class="thead">Важная информация</td>
-	</tr>
-	<tr>
-		<td class="alt1">
-			<div class="navbar_notice">В Sailnumbers добавлены новые классы: Raceboard, iQFOiL и гидрофойл.
-
-Кто захочет изменить свою запись пишите мне в личку с нужными параметрами (админ).</div>
-		</td>
-	</tr>
-	</table>
-	<br class="forumtitlehide"/>
-</form>
-
-
-
-
-
-<!-- NAVBAR POPUP MENUS -->
-
-	
-	
-	
-	<!-- header quick search form -->
-	<div class="vbmenu_popup" id="navbar_search_menu" style="display:none;margin-top:3px" align="left">
-		<table cellpadding="4" cellspacing="1" border="0">
-		<tr>
-			<td class="thead">Поиск по форуму</td>
-		</tr>
-		<tr>
-			<td class="vbmenu_option" title="nohilite">
-				<form action="search.php?do=process" method="post">
-
-					<input type="hidden" name="do" value="process" />
-					<input type="hidden" name="quicksearch" value="1" />
-					<input type="hidden" name="childforums" value="1" />
-					<input type="hidden" name="exactname" value="1" />
-					<input type="hidden" name="s" value="" />
-					<input type="hidden" name="securitytoken" value="1745775901-14bdb4c2617747c24a1d7db001e8271a72ba24f3" />
-					<div><input type="text" class="bginput" name="query" size="25" tabindex="1001" /><input type="submit" class="button" value="Вперёд" tabindex="1004" /></div>
-					<div style="margin-top:6px">
-						<label for="rb_nb_sp0"><input type="radio" name="showposts" value="0" id="rb_nb_sp0" tabindex="1002" checked="checked" />Отобразить темы</label>
-						&nbsp;
-						<label for="rb_nb_sp1"><input type="radio" name="showposts" value="1" id="rb_nb_sp1" tabindex="1003" />Отображать сообщения</label>
-					</div>
-				</form>
-			</td>
-		</tr>
-		
-		<tr>
-			<td class="vbmenu_option"><a href="tags.php" rel="nofollow">Поиск по метке</a></td>
-		</tr>
-		
-		<tr>
-			<td class="vbmenu_option"><a href="search.php" accesskey="4" rel="nofollow">Расширенный поиск</a></td>
-		</tr>
-		<tr>
-	<td class="vbmenu_option"><a href="post_thanks.php?do=findallthanks">Найти все сообщения с благодарностями</a></td>
-</tr><tr>
-	<td class="thead">Поиск по блогам</td>
-</tr>
-<tr>
-	<td class="vbmenu_option" title="nohilite">
-		<form action="blog_search.php?do=dosearch" method="post">
-			<input type="hidden" name="s" value="" />
-			<input type="hidden" name="securitytoken" value="1745775901-14bdb4c2617747c24a1d7db001e8271a72ba24f3" />
-			<input type="hidden" name="do" value="dosearch" />
-			<input type="hidden" name="quicksearch" value="1" />
-			<div><input type="text" class="bginput" name="title" size="25" tabindex="2003" /><input type="submit" class="button" value="Вперёд" tabindex="2004" /></div>
-		</form>
-	</td>
-</tr>
-<tr>
-	<td class="vbmenu_option"><a href="blog_search.php?do=search">Расширенный поиск</a></td>
-</tr><tr>
-	<td class="thead">Поиск в галерее</td>
-</tr>
-<tr>
-	<td class="vbmenu_option" title="nohilite">
-
-<form action="https://www.raceyou.ru/gallery/search.php" method="post">
-<input name="s" type="hidden" value="" />
-<input name="do" type="hidden" value="searchresults" />
-<input name="quicksearch" type="hidden" value="1" />
-<input name="catids[]" type="hidden" value="0" />
-<input class="bginput" name="string" size="25" type="text" /> <input type="submit" class="button" value="Вперёд"  /></form>
-	</td>
-</tr>
-<tr>
-	<td class="vbmenu_option"><a href="https://www.raceyou.ru/gallery/search.php?">Расширенный поиск</a></td>
-</tr>
-		</table>
-	</div>
-	<!-- / header quick search form -->
-	
-	
-	
-	<!-- user cp tools menu -->
-	<div class="vbmenu_popup" id="usercptools_menu" style="display:none;margin-top:3px" align="left">
-		<table cellpadding="4" cellspacing="1" border="0">
-
-		<tr><td class="thead">Навигация</td></tr>
-		<tr><td class="vbmenu_option"><a href="search.php?do=getdaily">Сообщения за день</a></td></tr>
-		<tr><td class="vbmenu_option"><a href="forumdisplay.php?do=markread&amp;markreadhash=1745775901-14bdb4c2617747c24a1d7db001e8271a72ba24f3">Все разделы прочитаны</a></td></tr>
-		<tr><td class="vbmenu_option"><a href="#" onclick="window.open('misc.php?do=buddylist&amp;focus=1','buddylist','statusbar=no,menubar=no,toolbar=no,scrollbars=yes,resizable=yes,width=250,height=300'); return false;">Список знакомых</a></td></tr>
-		
-		
-
-		<tr><td class="thead"><a href="usercp.php">Мой кабинет</a></td></tr>
-		
-		<!--<tr><td class="vbmenu_option"><a href="profile.php?do=editavatar">Изменить аватар</a></td></tr>-->
-		<tr><td class="vbmenu_option"><a href="profile.php?do=editprofile">Редактировать данные</a></td></tr>
-		<tr><td class="vbmenu_option"><a href="profile.php?do=editoptions">Опции</a></td></tr>
-		
-
-		<tr><td class="thead">Разное</td></tr>
-		<tr><td class="vbmenu_option"><a href="private.php" rel="nofollow">Личные сообщения</a></td></tr>
-		<tr><td class="vbmenu_option"><a href="subscription.php" rel="nofollow">Темы с подпиской</a></td></tr>
-		<tr><td class="vbmenu_option"><a href="member.php?u=12638">Ваш профиль</a></td></tr>
-		<tr><td class="vbmenu_option"><a href="calendar.php">Календарь</a></td></tr>
-		<tr><td class="vbmenu_option"><a href="online.php">Кто на форуме</a></td></tr>
-		
-
-		</table>
-	</div>
-	<!-- / user cp tools menu -->
-
-	
-<!-- / NAVBAR POPUP MENUS -->
-
-<!-- PAGENAV POPUP -->
-	<div class="vbmenu_popup" id="pagenav_menu" style="display:none">
-		<table cellpadding="4" cellspacing="1" border="0">
-		<tr>
-			<td class="thead" nowrap="nowrap">К странице...</td>
-		</tr>
-		<tr>
-			<td class="vbmenu_option" title="nohilite">
-			<form action="index.php" method="get" onsubmit="return this.gotopage()" id="pagenav_form">
-				<input type="text" class="bginput" id="pagenav_itxt" style="font-size:11px" size="4" />
-				<input type="button" class="button" id="pagenav_ibtn" value="Вперёд" />
-			</form>
-			</td>
-		</tr>
-		</table>
-	</div>
-<!-- / PAGENAV POPUP -->
-
-
-
-
-
-
-
-<table class="" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-<tr align="center">
-<td>
-	
-<div class="letterblock"><a href="memberlist.php?ltr=%23&amp;pp=100&amp;sort=username&amp;order=asc">#</a></div>
-
-<div class="letterblock2"><strong>A</strong></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=B&amp;pp=100&amp;sort=username&amp;order=asc">B</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=C&amp;pp=100&amp;sort=username&amp;order=asc">C</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=D&amp;pp=100&amp;sort=username&amp;order=asc">D</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=E&amp;pp=100&amp;sort=username&amp;order=asc">E</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=F&amp;pp=100&amp;sort=username&amp;order=asc">F</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=G&amp;pp=100&amp;sort=username&amp;order=asc">G</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=H&amp;pp=100&amp;sort=username&amp;order=asc">H</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=I&amp;pp=100&amp;sort=username&amp;order=asc">I</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=J&amp;pp=100&amp;sort=username&amp;order=asc">J</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=K&amp;pp=100&amp;sort=username&amp;order=asc">K</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=L&amp;pp=100&amp;sort=username&amp;order=asc">L</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=M&amp;pp=100&amp;sort=username&amp;order=asc">M</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=N&amp;pp=100&amp;sort=username&amp;order=asc">N</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=O&amp;pp=100&amp;sort=username&amp;order=asc">O</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=P&amp;pp=100&amp;sort=username&amp;order=asc">P</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=Q&amp;pp=100&amp;sort=username&amp;order=asc">Q</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=R&amp;pp=100&amp;sort=username&amp;order=asc">R</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=S&amp;pp=100&amp;sort=username&amp;order=asc">S</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=T&amp;pp=100&amp;sort=username&amp;order=asc">T</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=U&amp;pp=100&amp;sort=username&amp;order=asc">U</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=V&amp;pp=100&amp;sort=username&amp;order=asc">V</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=W&amp;pp=100&amp;sort=username&amp;order=asc">W</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=X&amp;pp=100&amp;sort=username&amp;order=asc">X</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=Y&amp;pp=100&amp;sort=username&amp;order=asc">Y</a></div>
-
-<div class="letterblock"><a href="memberlist.php?ltr=Z&amp;pp=100&amp;sort=username&amp;order=asc">Z</a></div>
-
-</td>
-</tr>
-</table>
-
-
-<!-- memberlist quick search form -->
-<div class="vbmenu_popup" id="memberlist_search_menu" style="display:none">
-<form action="memberlist.php?do=getall" method="post">
-	<table cellpadding="4" cellspacing="1" border="0">
-	<tr>
-		<td class="thead">Поиск пользователей</td>
-	</tr>
-	<tr>
-		<td class="vbmenu_option" title="nohilite">
-			<input type="hidden" name="s" value="" />
-			<input type="hidden" name="securitytoken" value="1745775901-14bdb4c2617747c24a1d7db001e8271a72ba24f3" />
-			<input type="hidden" name="do" value="getall" />
-			<input type="text" class="bginput" name="ausername" size="20" value="A" title="Имя" /><input type="submit" class="button" value="Вперёд"  />
-		</td>
-	</tr>
-	
-	<tr>
-		<td class="vbmenu_option"><a href="memberlist.php?do=search">Расширенный поиск</a></td>
-	</tr>
-	
-	</table>
-</form>
-</div>
-<!-- / memberlist quick search form -->
-
-
-<br />
-
-
-		</div>
-	</div>
-</div>
-
-<!-- / close content container -->
-<!-- open content container -->
-
-<div align="center">
-	<div class="page" style="width:100%; text-align:left">
-		<div style="padding:0px 5px 0px 5px" align="left" class="paddingmobile">
-
-
-
-<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:3px">
-<tr valign="bottom">
-	<td align="right"><div class="pagenav" align="right">
-<table class="tborder" cellpadding="3" cellspacing="1" border="0">
-<tr>
-	<td class="vbmenu_control" style="font-weight:normal">Страница 1 из 9</td>
-	
-	
-		<td class="alt2"><span class="smallfont" title="Показано с 1 по 100 из 813."><strong>1</strong></span></td>
- <td class="alt1"><a class="smallfont" href="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=2" title="с 101 по 200 из 813">2</a></td><td class="alt1"><a class="smallfont" href="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=3" title="с 201 по 300 из 813">3</a></td><td class="alt1"><a class="smallfont" href="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=4" title="с 301 по 400 из 813">4</a></td><td class="alt1"><a class="smallfont" href="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=5" title="с 401 по 500 из 813">5</a></td>
-	<td class="alt1"><a class="smallfont" href="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=2" title="Следующая страница - с 101 по 200 из 813">&gt;</a></td>
-	<td class="alt1" nowrap="nowrap"><a class="smallfont" href="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=9" title="Последняя страница - с 801 по 813 из 813">Последняя <strong>&raquo;</strong></a></td>
-	<td class="vbmenu_control" title="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A"><a name="PageNav"></a></td>
-</tr>
-</table>
-</div></td>
-</tr>
-</table>
-
-
-<form action="profile.php?do=deleteusergroups&amp;usergroupid=0" method="post">
-<input type="hidden" name="do" value="deleteusergroups" />
-<input type="hidden" name="s" value="" />
-<input type="hidden" name="securitytoken" value="1745775901-14bdb4c2617747c24a1d7db001e8271a72ba24f3" />
-<input type="hidden" name="usergroupid" value="0" />
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
-<tr>
-	<td class="tcat" width="100%">
-		<span class="smallfont" style="float:right">
-			Показано с 1 по 100 из 813.
-			<br />
-			На поиск затрачено <strong>0.07</strong> сек.
-		</span>
-		
-		RaceYou! Всероссийский виндсерфинг форум: Пользователи
-		
-	</td>
-	
-	<td class="vbmenu_control" id="memberlist_search"><a href="memberlist.php?do=search">Поиск пользователей</a> <script type="text/javascript"> vbmenu_register("memberlist_search"); </script></td>
-	
-
-</tr>
-</table>
-
-<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
-<tr align="center">
-	<td class="thead" align="left" nowrap="nowrap"><a href="memberlist.php?ltr=A&amp;order=ASC&amp;sort=username&amp;pp=100">Имя</a> <a href="memberlist.php?ltr=A&amp;order=desc&amp;sort=username&amp;pp=100&amp;page=1" rel="nofollow"><img class="inlineimg" src="https://www.raceyou.ru/images/buttons/sortdesc.gif" alt="Инвертировать сортировку" border="0" /></a></td>
-	<td class="thead" nowrap="nowrap">Контакт</td>
-	
-	<td class="thead" nowrap="nowrap">Домашняя страничка</td>
-	
-	
-	<td class="thead" nowrap="nowrap"><a href="memberlist.php?ltr=A&amp;order=DESC&amp;sort=posts&amp;pp=100">Сообщений</a> </td>
-
-	
-	<td class="thead" nowrap="nowrap"><a href="memberlist.php?ltr=A&amp;order=DESC&amp;sort=reputation&amp;pp=100">Благодарностей</a> </td>
-	<td class="thead" nowrap="nowrap">Аватар</td>
-	
-	
-	
-	<td class="thead" nowrap="nowrap"><a href="memberlist.php?ltr=A&amp;order=ASC&amp;sort=field4&amp;pp=100">Sail №</a> </a><td class="thead" nowrap="nowrap"><a href="memberlist.php?ltr=A&amp;order=ASC&amp;sort=field2&amp;pp=100">Откуда:</a> </a><td class="thead" nowrap="nowrap"><a href="memberlist.php?ltr=A&amp;order=ASC&amp;sort=field5&amp;pp=100">Клуб</a> </a><td class="thead" nowrap="nowrap"><a href="memberlist.php?ltr=A&amp;order=ASC&amp;sort=field8&amp;pp=100">Вес</a> </a>
-	
-</tr>
-<tr align="center">
-	<td class="alt1Active" align="left" id="u12858">
-		<a href="member.php?u=12858">A'Lisichca</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12858" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для A'Lisichca" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6158">
-		<a href="member.php?u=6158">A-kula</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=6158" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте A-kula" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=6158" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для A-kula" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">39</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar6158_1.gif" border="0" width="120" height="115" alt="Аватар для A-kula" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Питер</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12200">
-		<a href="member.php?u=12200">A.Dimas</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12200" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для A.Dimas" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">42</td>
-	
-	<td class="alt1"><font color="#005500"><b>1</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar12200_3.gif" border="0" width="120" height="120" alt="Аватар для A.Dimas" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Москва</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12213">
-		<a href="member.php?u=12213">A.lisa</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12213" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для A.lisa" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13903">
-		<a href="member.php?u=13903">a0008a</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=13903" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте a0008a" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=13903" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для a0008a" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Химки</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13899">
-		<a href="member.php?u=13899">A26</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=13899" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для A26" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6914">
-		<a href="member.php?u=6914">a74</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=6914" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для a74" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">3</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Санкт-Петербург</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u9170">
-		<a href="member.php?u=9170">aa</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=9170" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aa" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6870">
-		<a href="member.php?u=6870">aanaastaasiyaa</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=6870" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте aanaastaasiyaa" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=6870" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aanaastaasiyaa" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">анапа</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u7413">
-		<a href="member.php?u=7413">aanuta</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=7413" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aanuta" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Москва</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13588">
-		<a href="member.php?u=13588">aartukhov</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=13588" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aartukhov" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u8142">
-		<a href="member.php?u=8142">aatche</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=8142" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте aatche" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=8142" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aatche" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Минск</td><td class="alt1">Белорусская ассоциация виндсерфинга</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13053">
-		<a href="member.php?u=13053">AB</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=13053" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для AB" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">36</td>
-	
-	<td class="alt1"><font color="#005500"><b>1</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar13053_1.gif" border="0" width="100" height="100" alt="Аватар для AB" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Тольятти</td><td class="alt1">&nbsp;</td><td class="alt2">90-100</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u14811">
-		<a href="member.php?u=14811">ab41</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=14811" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте ab41" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=14811" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для ab41" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">1</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Краснодар</td><td class="alt1">Не состою</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12463">
-		<a href="member.php?u=12463">abalandin</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12463" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для abalandin" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u14150">
-		<a href="member.php?u=14150">Abba</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=14150" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте Abba" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=14150" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Abba" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">5</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Москва</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u10795">
-		<a href="member.php?u=10795">abc44def</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=10795" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для abc44def" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">770</td>
-	
-	<td class="alt1"><font color="#005500"><b>272</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar10795_4.gif" border="0" width="120" height="120" alt="Аватар для abc44def" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Германия</td><td class="alt1">&nbsp;</td><td class="alt2">сбросил 6</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6081">
-		<a href="member.php?u=6081">abcd</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=6081" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для abcd" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">вфыфывфыв</td><td class="alt1">фыввфыв</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u14572">
-		<a href="member.php?u=14572">aberapo</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=14572" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aberapo" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">Диктор</td><td class="alt2">Кырен</td><td class="alt1">aberapo</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12831">
-		<a href="member.php?u=12831">ABerezhnoi</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12831" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для ABerezhnoi" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">2</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u7971">
-		<a href="member.php?u=7971">abvgd-ka</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=7971" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте abvgd-ka" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=7971" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для abvgd-ka" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Москва</td><td class="alt1">увы</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13759">
-		<a href="member.php?u=13759">AbyrValg</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=13759" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте AbyrValg" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=13759" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для AbyrValg" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Санкт-Петербург</td><td class="alt1">Windsurfing.spb</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12828">
-		<a href="member.php?u=12828">acccsys</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12828" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для acccsys" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u5672">
-		<a href="member.php?u=5672">accelerator</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=5672" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для accelerator" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">15</td>
-	
-	<td class="alt1"><font color="#005500"><b>1</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar5672_1.gif" border="0" width="120" height="91" alt="Аватар для accelerator" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Новосибирск</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12600">
-		<a href="member.php?u=12600">Achebotarev77</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12600" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Achebotarev77" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">5</td>
-	
-	<td class="alt1"><font color="#005500"><b>1</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Волгоград</td><td class="alt1">Варваровка :)</td><td class="alt2">83</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u10569">
-		<a href="member.php?u=10569">acontinent</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=10569" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для acontinent" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6820">
-		<a href="member.php?u=6820">acridity</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=6820" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для acridity" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">SPb</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u10156">
-		<a href="member.php?u=10156">ActiveRestUA</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=10156" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте ActiveRestUA" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=10156" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для ActiveRestUA" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">6</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar10156_2.gif" border="0" width="120" height="65" alt="Аватар для ActiveRestUA" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Киев</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12991">
-		<a href="member.php?u=12991">ActiveSteve</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12991" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для ActiveSteve" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">1</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6972">
-		<a href="member.php?u=6972">actrees05</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=6972" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для actrees05" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Москва</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u14278">
-		<a href="member.php?u=14278">adamazek</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=14278" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для adamazek" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">Менеджер</td><td class="alt2">Ухта</td><td class="alt1">adamazek</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u15020">
-		<a href="member.php?u=15020">Aderfenn</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=15020" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Aderfenn" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13077">
-		<a href="member.php?u=13077">Adfuckatt</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=13077" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Adfuckatt" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6483">
-		<a href="member.php?u=6483">admif172</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=6483" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте admif172" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=6483" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для admif172" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">55</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Вышгород</td><td class="alt1">&nbsp;</td><td class="alt2">93</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u7786">
-		<a href="member.php?u=7786">admike</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=7786" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для admike" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">saint-Petersburg</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u14514">
-		<a href="member.php?u=14514">adminalik</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=14514" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для adminalik" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Крым</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12961">
-		<a href="member.php?u=12961">ADrelin</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12961" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для ADrelin" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">1</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u15071">
-		<a href="member.php?u=15071">adrenalinevictim</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=15071" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для adrenalinevictim" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Нижний Новгород</td><td class="alt1">Нет</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13847">
-		<a href="member.php?u=13847">Adrenalinium</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=13847" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Adrenalinium" border="0" /></a></td>
-	
-	<td class="alt1"><a href="https://kpocciko.ucoz.net/" target="_blank"><img src="https://www.raceyou.ru/images/buttons/home.gif" alt="home.gif" title="Посетить домашнюю страницу Adrenalinium!"  border="0" /></a></td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12517">
-		<a href="member.php?u=12517">Adriano</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12517" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Adriano" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u9092">
-		<a href="member.php?u=9092">Adriano61</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=9092" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Adriano61" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">28</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar9092_1.gif" border="0" width="120" height="90" alt="Аватар для Adriano61" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Феодосия</td><td class="alt1">&nbsp;</td><td class="alt2">70</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u9148">
-		<a href="member.php?u=9148">adstrelnikov</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=9148" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте adstrelnikov" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=9148" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для adstrelnikov" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Москва</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6755">
-		<a href="member.php?u=6755">adv07</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=6755" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте adv07" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=6755" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для adv07" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Тула</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u8098">
-		<a href="member.php?u=8098">Advard</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=8098" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Advard" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">37</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Верхнеднепровск</td><td class="alt1">нет в городе клуба - жаль</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6874">
-		<a href="member.php?u=6874">aeg2005</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=6874" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aeg2005" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Москва</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13074">
-		<a href="member.php?u=13074">AEMatrosov</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=13074" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для AEMatrosov" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">2</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6571">
-		<a href="member.php?u=6571">Aero</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=6571" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Aero" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">МО</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13208">
-		<a href="member.php?u=13208">afateev</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=13208" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для afateev" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Усть-Каменогорск</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u7415">
-		<a href="member.php?u=7415">Affernus</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=7415" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Affernus" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">151</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar7415_3.gif" border="0" width="120" height="120" alt="Аватар для Affernus" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">37</td><td class="alt2">Москва</td><td class="alt1">-</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u14823">
-		<a href="member.php?u=14823">afipipo</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=14823" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для afipipo" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">Имиджмей</td><td class="alt2">Ангарск</td><td class="alt1">afipipo</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u10159">
-		<a href="member.php?u=10159">Afroditapof</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=10159" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте Afroditapof" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=10159" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Afroditapof" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">1</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">England</td><td class="alt2">England</td><td class="alt1">AfroditapofKR</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13957">
-		<a href="member.php?u=13957">afufaqo</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=13957" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для afufaqo" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">Крупье</td><td class="alt2">Салават</td><td class="alt1">afufaqo</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6019">
-		<a href="member.php?u=6019">Agata</a>
-		<div class="smallfont">Бегущая по волнам</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=6019" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте Agata" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=6019" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Agata" border="0" /></a></td>
-	
-	<td class="alt1"><a href="http://agata-g.livejournal.com" target="_blank"><img src="https://www.raceyou.ru/images/buttons/home.gif" alt="home.gif" title="Посетить домашнюю страницу Agata!"  border="0" /></a></td>
-	
-	
-	<td class="alt2">2,277</td>
-	
-	<td class="alt1"><font color="#005500"><b>82</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar6019_11.gif" border="0" width="120" height="120" alt="Аватар для Agata" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Le Morne</td><td class="alt1">Ловцы гроз )))</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u467">
-		<a href="member.php?u=467">Age</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=467" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Age" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">180</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u14300">
-		<a href="member.php?u=14300">agemeke</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=14300" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для agemeke" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">Авиадисп</td><td class="alt2">Дмитров</td><td class="alt1">agemeke</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12711">
-		<a href="member.php?u=12711">agnev</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12711" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для agnev" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u243">
-		<a href="member.php?u=243">AGrande</a>
-		<div class="smallfont">Rider</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=243" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для AGrande" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">45</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar243_3.gif" border="0" width="120" height="109" alt="Аватар для AGrande" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">г.Владимир</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u7320">
-		<a href="member.php?u=7320">agre55or</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=7320" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для agre55or" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">21</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar7320_2.gif" border="0" width="100" height="100" alt="Аватар для agre55or" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Санкт-Петербург</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6911">
-		<a href="member.php?u=6911">Agri</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=6911" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Agri" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">25</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Тверь</td><td class="alt1">Тверяк</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13097">
-		<a href="member.php?u=13097">agsemov</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=13097" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для agsemov" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13777">
-		<a href="member.php?u=13777">ahuwusy</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=13777" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для ahuwusy" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">kroha.bi</td><td class="alt2">ahuwusy</td><td class="alt1">ahuwusy</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u7640">
-		<a href="member.php?u=7640">aidakhmil</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=7640" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aidakhmil" border="0" /></a></td>
-	
-	<td class="alt1"><a href="http://www.tearoad.ru" target="_blank"><img src="https://www.raceyou.ru/images/buttons/home.gif" alt="home.gif" title="Посетить домашнюю страницу aidakhmil!"  border="0" /></a></td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Москва</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12139">
-		<a href="member.php?u=12139">aif</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12139" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aif" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Петропавловск-Камчатский</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u466">
-		<a href="member.php?u=466">aigen</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=466" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте aigen" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=466" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aigen" border="0" /></a></td>
-	
-	<td class="alt1"><a href="http://www.windsurf.su" target="_blank"><img src="https://www.raceyou.ru/images/buttons/home.gif" alt="home.gif" title="Посетить домашнюю страницу aigen!"  border="0" /></a></td>
-	
-	
-	<td class="alt2">114</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar466_11.gif" border="0" width="120" height="90" alt="Аватар для aigen" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">3434</td><td class="alt2">Волжский</td><td class="alt1">7 Ветров</td><td class="alt2">115</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u14144">
-		<a href="member.php?u=14144">AIIeJIbCuH4uK</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=14144" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для AIIeJIbCuH4uK" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Москва</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u7988">
-		<a href="member.php?u=7988">aik49</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=7988" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aik49" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Одесса</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u14234">
-		<a href="member.php?u=14234">Aioramua</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=14234" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Aioramua" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u11119">
-		<a href="member.php?u=11119">air1309</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=11119" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для air1309" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6638">
-		<a href="member.php?u=6638">air50</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=6638" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для air50" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">2</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">саров</td><td class="alt1">горизонт</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u11806">
-		<a href="member.php?u=11806">airjob</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=11806" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для airjob" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u15196">
-		<a href="member.php?u=15196">AirKovalev</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=15196" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте AirKovalev" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=15196" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для AirKovalev" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Новосибирск</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u10127">
-		<a href="member.php?u=10127">airkus</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=10127" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для airkus" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Тула</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12665">
-		<a href="member.php?u=12665">Airmen</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12665" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Airmen" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">11</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar12665_1.gif" border="0" width="120" height="120" alt="Аватар для Airmen" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Петрозаводск</td><td class="alt1">ПараМотоКлуб &quot;Крылья&quot;.</td><td class="alt2">70кг</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6417">
-		<a href="member.php?u=6417">airmustim</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=6417" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте airmustim" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=6417" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для airmustim" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Анталья</td><td class="alt1">Пока ни в каком</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u9727">
-		<a href="member.php?u=9727">aivengo</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=9727" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте aivengo" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=9727" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aivengo" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u7757">
-		<a href="member.php?u=7757">Aiwa28</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=7757" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте Aiwa28" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=7757" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Aiwa28" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Россия</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u15186">
-		<a href="member.php?u=15186">aJJ2022</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=15186" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aJJ2022" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Москва</td><td class="alt1">нет</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u14735">
-		<a href="member.php?u=14735">ak-ept</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=14735" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте ak-ept" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=14735" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для ak-ept" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">1</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">21</td><td class="alt2">Заграница</td><td class="alt1">Несснасс</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u10944">
-		<a href="member.php?u=10944">ak-s</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=10944" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для ak-s" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Пермь</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12940">
-		<a href="member.php?u=12940">akela</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12940" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для akela" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u5858">
-		<a href="member.php?u=5858">Akella</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=5858" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Akella" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">722</td>
-	
-	<td class="alt1"><font color="#005500"><b>28</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar5858_3.gif" border="0" width="120" height="120" alt="Аватар для Akella" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">49</td><td class="alt2">г.Москва</td><td class="alt1">&nbsp;</td><td class="alt2">80</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u7096">
-		<a href="member.php?u=7096">Akelo</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=7096" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Akelo" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u14363">
-		<a href="member.php?u=14363">akhmetgali</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=14363" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для akhmetgali" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Kazan</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u5703">
-		<a href="member.php?u=5703">akhom</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=5703" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте akhom" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=5703" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для akhom" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar5703_4.gif" border="0" width="120" height="102" alt="Аватар для akhom" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Волгоград</td><td class="alt1">&quot;7 ветров&quot; Волгогрдской обл.</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u11932">
-		<a href="member.php?u=11932">Akinin_Ivan</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=11932" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Akinin_Ivan" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u10474">
-		<a href="member.php?u=10474">akolonin</a>
-		<div class="smallfont">Windsurfkiter</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=10474" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для akolonin" border="0" /></a></td>
-	
-	<td class="alt1"><a href="http://akolonin.blogspot.ru/" target="_blank"><img src="https://www.raceyou.ru/images/buttons/home.gif" alt="home.gif" title="Посетить домашнюю страницу akolonin!"  border="0" /></a></td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">3</td><td class="alt2">Новосибирск</td><td class="alt1">Наука, Галс</td><td class="alt2">70</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u7955">
-		<a href="member.php?u=7955">akomfort</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=7955" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для akomfort" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u9924">
-		<a href="member.php?u=9924">akorelsky</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=9924" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте akorelsky" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=9924" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для akorelsky" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Северодвинск</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u15028">
-		<a href="member.php?u=15028">AKorolev</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=15028" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для AKorolev" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Саратов/Энгельс</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6443">
-		<a href="member.php?u=6443">Aksinia</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=6443" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Aksinia" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Спб</td><td class="alt1">1011010101</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u5053">
-		<a href="member.php?u=5053">aktyabr</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=5053" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для aktyabr" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">90</td>
-	
-	<td class="alt1"><font color="#005500"><b>19</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar5053_2.gif" border="0" width="120" height="80" alt="Аватар для aktyabr" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Должанка</td><td class="alt1">&nbsp;</td><td class="alt2">75</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u6646">
-		<a href="member.php?u=6646">Akwawad</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=6646" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Akwawad" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">1</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Ейск</td><td class="alt1">нивкаком</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u14236">
-		<a href="member.php?u=14236"></img><span style="color: green;">AK_Windserfing<img src="images/icons/confederate.gif"></img></span></a>
-		<div class="smallfont">Confederate</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=14236" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для AK_Windserfing" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">76</td>
-	
-	<td class="alt1"><font color="#005500"><b>4</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar14236_2.gif" border="0" width="119" height="120" alt="Аватар для AK_Windserfing" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Москва</td><td class="alt1">&nbsp;</td><td class="alt2">86</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u7925">
-		<a href="member.php?u=7925">al</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=7925" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для al" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">117</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar7925_1.gif" border="0" width="113" height="120" alt="Аватар для al" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">СПб</td><td class="alt1">Диван</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12236">
-		<a href="member.php?u=12236">Al Snake</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12236" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Al Snake" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2"><img src="customavatars/avatar12236_2.gif" border="0" width="120" height="100" alt="Аватар для Al Snake" hspace="4" vspace="4" /></td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Москва</td><td class="alt1">&nbsp;</td><td class="alt2">92</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u12034">
-		<a href="member.php?u=12034">al-p</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=12034" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для al-p" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u9877">
-		<a href="member.php?u=9877">Alagert</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=9877" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Alagert" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">130</td>
-	
-	<td class="alt1"><font color="#005500"><b>6</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">СПб</td><td class="alt1">&nbsp;</td><td class="alt2">73</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13786">
-		<a href="member.php?u=13786">ALam</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=13786" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для ALam" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">37</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">rus 71</td><td class="alt2">тула</td><td class="alt1">wsst</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u13666">
-		<a href="member.php?u=13666">AlanThomas</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2">&nbsp;<a href="private.php?do=newpm&amp;u=13666" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для AlanThomas" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">0</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">New York, USA</td><td class="alt1">&nbsp;</td><td class="alt2">&nbsp;</td>
-	
-</tr><tr align="center">
-	<td class="alt1Active" align="left" id="u7343">
-		<a href="member.php?u=7343">Alb</a>
-		<div class="smallfont">Windsurfer</div>
-	</td>
-	<td class="alt2"><a href="sendmessage.php?do=mailmember&amp;u=7343" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/email.gif" alt="email" title="Нажмите здесь, чтобы послать сообщение по электронной почте Alb" border="0" /></a>&nbsp;<a href="private.php?do=newpm&amp;u=7343" target="_blank" rel="nofollow"><img src="https://www.raceyou.ru/images/buttons/sendpm.gif" alt="sendpm" title="Отправить личное сообщение для Alb" border="0" /></a></td>
-	
-	<td class="alt1">&nbsp;</td>
-	
-	
-	<td class="alt2">6</td>
-	
-	<td class="alt1"><font color=""><b>0</b></font></td>
-	<td class="alt2">&nbsp;</td>
-	
-	
-	
-	<td class="alt1">&nbsp;</td><td class="alt2">Одинцово (Мск. обл.)</td><td class="alt1">&nbsp;</td><td class="alt2">66</td>
-	
-</tr>
-<tr>
-	<td class="tfoot" colspan="10" align="right">
-		<span class="smallfont">
-		
-			Показано с 1 по 100 из 813.
-		
-		</span>
-	</td>
-</tr>
-</table>
-
-</form>
-
-
-<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:3px">
-<tr valign="top">
-	<td align="right"><div class="pagenav" align="right">
-<table class="tborder" cellpadding="3" cellspacing="1" border="0">
-<tr>
-	<td class="vbmenu_control" style="font-weight:normal">Страница 1 из 9</td>
-	
-	
-		<td class="alt2"><span class="smallfont" title="Показано с 1 по 100 из 813."><strong>1</strong></span></td>
- <td class="alt1"><a class="smallfont" href="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=2" title="с 101 по 200 из 813">2</a></td><td class="alt1"><a class="smallfont" href="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=3" title="с 201 по 300 из 813">3</a></td><td class="alt1"><a class="smallfont" href="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=4" title="с 301 по 400 из 813">4</a></td><td class="alt1"><a class="smallfont" href="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=5" title="с 401 по 500 из 813">5</a></td>
-	<td class="alt1"><a class="smallfont" href="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=2" title="Следующая страница - с 101 по 200 из 813">&gt;</a></td>
-	<td class="alt1" nowrap="nowrap"><a class="smallfont" href="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=9" title="Последняя страница - с 801 по 813 из 813">Последняя <strong>&raquo;</strong></a></td>
-	<td class="vbmenu_control" title="memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A"><a name="PageNav"></a></td>
-</tr>
-</table>
-</div></td>
-</tr>
-</table>
-
-
-
-		</div>
-	</div>
-</div>
-
-<!-- / close content container -->
-<!-- open content container -->
-
-<div align="center">
-	<div class="page" style="width:100%; text-align:left">
-		<div style="padding:0px 5px 0px 5px" align="left" class="paddingmobile">
-
-
-<br />
-
-<table cellpadding="0" cellspacing="0" border="0" width="100%">
-<tr>
-	<td width="100%">&nbsp;</td>
-	<td><div class="smallfont forumjump" style="text-align:left; white-space:nowrap">
-	<form action="forumdisplay.php" method="get">
-	<input type="hidden" name="s" value="" />
-	<input type="hidden" name="daysprune" value="" />
-	<strong>Быстрый переход</strong><br />
-	<select style="padding:4px;" name="f" onchange="this.form.submit();">
-		<optgroup label="Навигация по форуму">
-			<option value="cp" >Мой кабинет</option>
-			<option value="pm" >Личные сообщения</option>
-			<option value="subs" >Подписки</option>
-			<option value="wol" >Кто на форуме</option>
-			<option value="search" >Поиск по форуму</option>
-			<option value="home" >Главная страница форума</option>
-		</optgroup>
-		
-		<optgroup label="Разделы">
-		<option value="1" class="fjdpth0" > RaceYou!</option>
-<option value="27" class="fjdpth1" >&nbsp; &nbsp;  Виндсерфинг - общий форум</option>
-<option value="123" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Виндсерферы года!</option>
-<option value="147" class="fjdpth3" >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  архив</option>
-<option value="28" class="fjdpth1" >&nbsp; &nbsp;  Для новичков</option>
-<option value="72" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Копилка знаний</option>
-<option value="122" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Лечим по фотографии :-)</option>
-<option value="178" class="fjdpth1" >&nbsp; &nbsp;  Коммерческий раздел</option>
-<option value="130" class="fjdpth1" >&nbsp; &nbsp;  Отчеты и рассказы</option>
-<option value="172" class="fjdpth1" >&nbsp; &nbsp;  Соревнования и фестивали</option>
-<option value="55" class="fjdpth1" >&nbsp; &nbsp;  Спортивный раздел</option>
-<option value="71" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Консультации по гоночным правилам</option>
-<option value="112" class="fjdpth1" >&nbsp; &nbsp;  Серф станции и яхтклубы</option>
-<option value="45" class="fjdpth1" >&nbsp; &nbsp;  Безопасность на воде и медицина</option>
-<option value="115" class="fjdpth0" > Матчасть</option>
-<option value="48" class="fjdpth1" >&nbsp; &nbsp;  Матчасть - общий форум</option>
-<option value="59" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Библиотека инструкций</option>
-<option value="117" class="fjdpth1" >&nbsp; &nbsp;  Отзывы и тесты</option>
-<option value="121" class="fjdpth1" >&nbsp; &nbsp;  Кто что скажет про эту модель?</option>
-<option value="109" class="fjdpth1" >&nbsp; &nbsp;  Помощь в выборе оборудования</option>
-<option value="114" class="fjdpth1" >&nbsp; &nbsp;  Ремонт матчасти</option>
-<option value="118" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Ремонтные мастерские</option>
-<option value="119" class="fjdpth1" >&nbsp; &nbsp;  Клуб самоделкиных</option>
-<option value="79" class="fjdpth0" > Дисциплины и классы в виндсерфинге</option>
-<option value="56" class="fjdpth1" >&nbsp; &nbsp;  Formula Windsurfing</option>
-<option value="58" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Копилка формульных знаний</option>
-<option value="124" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Помощь в выборе формульной матчасти</option>
-<option value="76" class="fjdpth1" >&nbsp; &nbsp;  Слалом</option>
-<option value="125" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Помощь в выборе слаломной матчасти</option>
-<option value="75" class="fjdpth1" >&nbsp; &nbsp;  Freestyle!</option>
-<option value="104" class="fjdpth1" >&nbsp; &nbsp;  Wave</option>
-<option value="77" class="fjdpth1" >&nbsp; &nbsp;  RS:X и T293</option>
-<option value="120" class="fjdpth1" >&nbsp; &nbsp;  Speed</option>
-<option value="173" class="fjdpth1" >&nbsp; &nbsp;  Гидрофойл</option>
-<option value="149" class="fjdpth0" > Зимний виндсерфинг и сноукайтинг</option>
-<option value="46" class="fjdpth1" >&nbsp; &nbsp;  Зимний виндсерфинг</option>
-<option value="151" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Матчасть для зимнего виндсерфинга</option>
-<option value="152" class="fjdpth1" >&nbsp; &nbsp;  Зимний кайтинг</option>
-<option value="166" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Матчасть для зимнего кайтинга</option>
-<option value="150" class="fjdpth1" >&nbsp; &nbsp;  Зимние соревнования</option>
-<option value="159" class="fjdpth0" > Та же вода!</option>
-<option value="135" class="fjdpth1" >&nbsp; &nbsp;  Кайтсерфинг</option>
-<option value="156" class="fjdpth1" >&nbsp; &nbsp;  SUP</option>
-<option value="179" class="fjdpth1" >&nbsp; &nbsp;  Вингфойл</option>
-<option value="158" class="fjdpth1" >&nbsp; &nbsp;  Серфинг</option>
-<option value="39" class="fjdpth0" > Путешествия</option>
-<option value="40" class="fjdpth1" >&nbsp; &nbsp;  Россия, Украина и Белоруссия</option>
-<option value="41" class="fjdpth1" >&nbsp; &nbsp;  Египет</option>
-<option value="42" class="fjdpth1" >&nbsp; &nbsp;  Европа</option>
-<option value="43" class="fjdpth1" >&nbsp; &nbsp;  Весь остальной мир</option>
-<option value="44" class="fjdpth1" >&nbsp; &nbsp;  Визы, турагентства, авиакомпании</option>
-<option value="80" class="fjdpth0" > Продажа матчасти</option>
-<option value="81" class="fjdpth1" >&nbsp; &nbsp;  Продажа нового оборудования</option>
-<option value="83" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Доски</option>
-<option value="84" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Паруса</option>
-<option value="85" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Мачты, гики</option>
-<option value="133" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Удлинители, шарниры</option>
-<option value="101" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Плавники</option>
-<option value="88" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Гидроодежда, трапеции</option>
-<option value="87" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Разное</option>
-<option value="82" class="fjdpth1" >&nbsp; &nbsp;  Продажа оборудования Б.У.</option>
-<option value="91" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Доски и комплекты</option>
-<option value="92" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Паруса и верхушки</option>
-<option value="93" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Мачты, гики</option>
-<option value="134" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Удлинители, шарниры</option>
-<option value="102" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Плавники</option>
-<option value="129" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Гидроодежда, трапеции</option>
-<option value="103" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Разное</option>
-<option value="136" class="fjdpth1" >&nbsp; &nbsp;  Formula windsurfing</option>
-<option value="142" class="fjdpth1" >&nbsp; &nbsp;  Кайтсерфинг</option>
-<option value="177" class="fjdpth1" >&nbsp; &nbsp;  Гидрофойл</option>
-<option value="180" class="fjdpth1" >&nbsp; &nbsp;  Вингфойл</option>
-<option value="145" class="fjdpth1" >&nbsp; &nbsp;  Зимний виндсерфинг</option>
-<option value="171" class="fjdpth1" >&nbsp; &nbsp;  SUP</option>
-<option value="176" class="fjdpth0" > Прочие объявления</option>
-<option value="36" class="fjdpth1" >&nbsp; &nbsp;  Куплю, обменяю, подарю</option>
-<option value="105" class="fjdpth1" >&nbsp; &nbsp;  Ищу попутчика (попутчицу)!</option>
-<option value="38" class="fjdpth1" >&nbsp; &nbsp;  Работа и услуги</option>
-<option value="131" class="fjdpth1" >&nbsp; &nbsp;  Прочие объявления</option>
-<option value="18" class="fjdpth0" > Кальянная</option>
-<option value="31" class="fjdpth1" >&nbsp; &nbsp;  Кальянная - общий форум</option>
-<option value="174" class="fjdpth1" >&nbsp; &nbsp;  Видеоролики</option>
-<option value="169" class="fjdpth1" >&nbsp; &nbsp;  Погода и природа</option>
-<option value="161" class="fjdpth1" >&nbsp; &nbsp;  Автофорум</option>
-<option value="162" class="fjdpth1" >&nbsp; &nbsp;  Гаджеты</option>
-<option value="163" class="fjdpth1" >&nbsp; &nbsp;  Разные хобби</option>
-<option value="32" class="fjdpth1" >&nbsp; &nbsp;  Эй, админ!</option>
-
-		</optgroup>
-		
-	</select><input type="submit" class="button" value="Вперёд"  />
-	</form>
-</div></td>
-</tr>
-</table>
-
-
-<p id="back-top">
-<a href="#top"><span class="backtotop"></span>&nbsp;</a>
-</p>
-<br />
-<div class="smallfont timestyle" align="center">Часовой пояс GMT +3, время: <span class="time">20:45</span>.</div>
-<br />
-
-
-		</div>
-	</div>
-</div>
-
-<!-- / close content container -->
-<!-- /content area table -->
-
-<form action="index.php" method="get" style="clear:left">
-
-<table cellpadding="6" cellspacing="0" border="0" width="100%" class="page footerselector" align="center">
-<tr>
-	
-		<td class="tfoot">
-			<select class="selectclass" name="styleid" onchange="switch_id(this, 'style')">
-				<optgroup label="Выбор стиля">
-					<option value="1" class="" >-- Default Style</option>
-<option value="4" class="" selected="selected">-- Raceyouru</option>
-
-				</optgroup>
-			</select>
-		</td>
-	
-	
-		<td class="tfoot">
-			<select class="selectclass" name="langid" onchange="switch_id(this, 'lang')">
-				<optgroup label="Выбор языка">
-					<option value="1" class="" >-- English (US)</option>
-<option value="2" class="" selected="selected">-- russian</option>
-
-				</optgroup>
-			</select>
-		</td>
-	
-	<td class="tfoot footselectorhide" align="right" width="100%">
-		<div class="smallfont">
-			<strong>
-				<a href="sendmessage.php" rel="nofollow" accesskey="9">Обратная связь</a> -
-				<a href="https://www.raceyou.ru">RaceYou! - Russian windsurfing community</a> -
-				
-				
-				<a href="archive/index.php">Архив</a> -
-				
-				
-				
-				<a href="#top" onclick="self.scrollTo(0, 0); return false;">Вверх</a>
-			</strong>
-		</div>
-	</td>
-</tr>
-</table>
-
-<br />
-
-<div align="center" class="hidecopytext">
-	<div class="smallfont" align="center">
-	<!-- Do not remove this copyright notice -->
-	Powered by vBulletin&reg; Copyright &copy;2000 - 2025, Jelsoft Enterprises Ltd. Перевод: <noindex><a href="http://www.zcarot.com/">zCarot</a></noindex>
-	<!-- Do not remove this copyright notice -->
-	</div>
-
-	<div class="smallfont" align="center">
-	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
-	<img src="https://raceyou.ru/cron.php?rand=1745775901" alt="" width="1" height="1" border="0" />
-	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
-
-	
-	</div>
-</div>
-
-</form>
-
-
-
-
-<!-- auto DST correction code -->
-<form action="profile.php?do=dst" method="post" name="dstform">
-	<input type="hidden" name="s" value="" />
-	<input type="hidden" name="securitytoken" value="1745775901-14bdb4c2617747c24a1d7db001e8271a72ba24f3" />
-	<input type="hidden" name="do" value="dst" />
-</form>
-<script type="text/javascript">
-<!--
-	var tzOffset = 3 + 0;
-	var utcOffset = new Date().getTimezoneOffset() / 60;
-	if (Math.abs(tzOffset + utcOffset) == 1)
-	{	// Dst offset is 1 so its changed
-		document.forms.dstform.submit();
-	}
-//-->
-</script>
-<!-- / auto DST correction code -->
-
-
-<script type="text/javascript">
-<!--
-	// Main vBulletin Javascript Initialization
-	vBulletin_init();
-//-->
-</script>
-
-<script type="text/javascript">
-var $=jQuery.noConflict();
-$(document).ready(function(){
-	// hide #back-top first
-	$("#back-top").hide();
-	// fade in #back-top
-	$(function () {
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 100) {
-				$('#back-top').fadeIn();
-			} else {
-				$('#back-top').fadeOut();
-			}
-		});
-		// scroll body to 0px on click
-		$('#back-top a').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 800);
-			return false;
-		});
-	});
-});
-</script>
-<script type="text/javascript" src="https://www.raceyou.ru/images/raceyouru/js/fluidvids.js"></script>
-<script type="text/javascript">
-    fluidvids.init({
-      selector: ['iframe'],
-      players: ['www.youtube.com', 'player.vimeo.com', 'coub.com']
-    });
-</script>
-
-<p align="center">
-</p>
-</div>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144556533-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'UA-144556533-1');
-</script><div class="spl"><img src="/images/ico_spl.gif" width="60" title="" alt=""><!--1112722899090--><div id='MhXZ_1112722899090'></div></div>
-
-</body>
-</html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ru" class=" range_4"><head>
+<meta name="robots" content="noindex,follow">
+<meta name="viewport" content="width=device-width">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="generator" content="vBulletin 3.7.3">
+
+<meta name="keywords" content="РІРёРЅРґСЃРµСЂС„РёРЅРі С„РѕСЂСѓРј windsurfing Russia">
+<meta name="description" content="Race You! Р¤РѕСЂСѓРј РїСЂРѕ РІРёРЅРґСЃРµСЂС„РёРЅРі.">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<!-- CSS Stylesheet -->
+<style type="text/css" id="vbulletin_css">
+/**
+* vBulletin 3.7.3 CSS
+* Style: 'Raceyouru'; Style ID: 4
+*/
+body
+{
+	background: #D9D9D9;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	margin: 5px 10px 10px 10px;
+	padding: 0px;
+}
+a:link, body_alink
+{
+	color: #22229C;
+}
+a:visited, body_avisited
+{
+	color: #22229C;
+}
+a:hover, a:active, body_ahover
+{
+	color: #FF4400;
+}
+.page
+{
+	background: #D9D9D9;
+	color: #000000;
+}
+td, th, p, li
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tborder
+{
+	background: #CCCCCC;
+	color: #000000;
+	border: 1px solid #5A5B5E;
+}
+.tcat
+{
+	background: #757677;
+	color: #FFFFFF;
+	font: bold 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	background-image: repeating-linear-gradient(to right, #6C6C6C 1px, #414141 2px, #272727 3px, #414141 4px, #6C6C6C 5px);
+}
+.tcat a:link, .tcat_alink
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+.tcat a:visited, .tcat_avisited
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+.tcat a:hover, .tcat a:active, .tcat_ahover
+{
+	color: #ffffff;
+	text-decoration: underline;
+}
+.thead
+{
+	background: #D9D9D9;
+	color: #000000;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.thead a:link, .thead_alink
+{
+	color: #000000;
+}
+.thead a:visited, .thead_avisited
+{
+	color: #000000;
+}
+.thead a:hover, .thead a:active, .thead_ahover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+.tfoot
+{
+	background: #3F4040;
+	color: #E0E0F6;
+}
+.tfoot a:link, .tfoot_alink
+{
+	color: #E0E0F6;
+}
+.tfoot a:visited, .tfoot_avisited
+{
+	color: #E0E0F6;
+}
+.tfoot a:hover, .tfoot a:active, .tfoot_ahover
+{
+	color: #FFF;
+	text-decoration: underline;
+}
+.alt1, .alt1Active
+{
+	background: #FFFFFF;
+	color: #000000;
+}
+.alt2, .alt2Active
+{
+	background: #FFFFFF;
+	color: #000000;
+}
+.inlinemod
+{
+	background: #FFFFCC;
+	color: #000000;
+}
+.wysiwyg
+{
+	background: #F5F5FF;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	margin: 5px 10px 10px 10px;
+	padding: 0px;
+}
+.wysiwyg a:link, .wysiwyg_alink
+{
+	color: #22229C;
+}
+.wysiwyg a:visited, .wysiwyg_avisited
+{
+	color: #22229C;
+}
+.wysiwyg a:hover, .wysiwyg a:active, .wysiwyg_ahover
+{
+	color: #FF4400;
+}
+textarea, .bginput
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.bginput option, .bginput optgroup
+{
+	font-size: 10pt;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.button
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+select
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+option, optgroup
+{
+	font-size: 11px;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.smallfont
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.time
+{
+	color: #666686;
+}
+.navbar
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.highlight
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+.fjsel
+{
+	background: #3E5C92;
+	color: #E0E0F6;
+}
+.fjdpth0
+{
+	background: #F7F7F7;
+	color: #000000;
+}
+.panel
+{
+	background: #E4E7F5 url(images/gradients/gradient_panel.gif) repeat-x top left;
+	color: #000000;
+	padding: 10px;
+	border: 2px outset;
+}
+.panelsurround
+{
+	background: #D1D4E0 url(images/gradients/gradient_panelsurround.gif) repeat-x top left;
+	color: #000000;
+}
+legend
+{
+	color: #22229C;
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.vbmenu_control
+{
+	background: #757677;
+	color: #FFFFFF;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding: 3px 6px 3px 6px;
+	white-space: nowrap;
+}
+.vbmenu_control a:link, .vbmenu_control_alink
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:visited, .vbmenu_control_avisited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.vbmenu_popup
+{
+	background: #BBC7CE;
+	color: #000000;
+	border: 1px solid #5A5B5E;
+}
+.vbmenu_option
+{
+	background: #E6E7E8;
+	color: #000000;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_option a:link, .vbmenu_option_alink
+{
+	color: #22229C;
+	text-decoration: none;
+}
+.vbmenu_option a:visited, .vbmenu_option_avisited
+{
+	color: #22229C;
+	text-decoration: none;
+}
+.vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite
+{
+	background: #8A949E;
+	color: #FFFFFF;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_hilite a:link, .vbmenu_hilite_alink
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite a:visited, .vbmenu_hilite_avisited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite a:hover, .vbmenu_hilite a:active, .vbmenu_hilite_ahover
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+body {
+background-size: contain;
+-webkit-background-size: contain;
+-o-background-size: contain;
+-moz-background-size: contain;
+}
+
+.header-wrapper {
+    padding: 0 0px;
+}
+html.range_0 .header-wrapper,
+html.range_1 .header-wrapper,
+html.range_2 .header-wrapper {
+    padding: 0;
+}
+
+table {
+    border-spacing: 1px!important;
+}
+.button {
+    min-height: 24px;
+    position: relative;
+    top: -2px;
+    left: 2px;
+}
+.fdforumtools {
+    padding: 0 0px!important;
+}
+/* rounded corners */
+.newthread,
+.st_links a,
+.newreplybutton,
+.buttondrop2,
+.fdforumtools,
+.newthreadbutton,
+.advertise,
+#forum-stats a.btn,
+.regbuttontop a.btn,
+.bginput,
+.button,
+.st_search input[type='text']{
+-webkit-border-radius: 0px!important;
+-moz-border-radius: 0px!important;
+border-radius: 0px!important;
+}
+#notifications_menu .thead {
+    background: linear-gradient(#2D2D2D, #757677)!important;
+}
+.tborderindex,.header,.myfixedtable {
+    border-collapse: separate!important;
+    border-spacing: 0px!important;
+}
+.tborderindex {
+    border-spacing: 1px!important;
+}
+.tborderindex thead td{
+    white-space:nowrap;
+}
+.custompostbit2 .alt2, .custompostbit .alt2 {
+    background: #FFFFFF!important;
+}
+#username_box {
+	color: #000!important;
+	text-shadow: 0px 0px 0 transparent!important;
+}
+.mypostbit .alt2 {
+    background: #e1e4f2 none!important;
+    border-bottom:1px solid #d1d1e1!important;
+}
+
+.pagenav td .smallfont,
+.iconlegend .smallfont {
+	color: #000!important;
+}
+.fdforumtools {
+    border-bottom-width: 1px!important;
+}
+.navbar a,
+.lastpostbycolor a {
+    color: #22229C!important;
+}
+.wgo .tcat {#7D7E82;}
+.button {
+    padding: 2px 6px 3px!important;
+    border-width: 2px!important;
+    border-style: outset!important;
+    border-color: buttonface!important;
+}
+.footerselector .tfoot {
+    background: #3F4040!important;
+    color: #E0E0F6!important;
+    opacity: 1!important;
+}
+.st_bg {
+    background: #D1D1E1!important;
+}
+.vbmenu_control {
+    color: #fff!important;
+    background: #757677 none!important;
+    padding: 3px 6px 3px 6px!important;
+}
+.mytoolbar .tcat {#7D7E82}
+.mainnavbar, .mainnavbar .vbmenu_control {
+    background-image: linear-gradient(#008BC5, #211753)!important;
+}
+.pagenav td.alt1 {
+    background: #F5F5FF!important;
+    color: #000000!important;
+}
+.pagenav td.alt2 {
+    background: #E1E4F2!important;
+    color: #000000!important;
+}
+.timestyle .time, .timestyle a, .nextprevstyle a {
+    color: #22229C!important;
+}
+.hidecopytext .smallfont a, .hidecopytext .smallfont,
+.timestyle, .nextprevstyle {
+    color: #000!important;
+    text-shadow: 0px 0px 0 transparent!important;
+}
+.usercpsidebar {
+    width: 158px!important;
+}
+.usercpmainContent {
+    margin-left: 200px!important;
+}
+.thead2 {
+    background: linear-gradient(#2D2D2D, #757677)!important;
+    font-family: Verdana, sans-serif!important;
+    font-weight: normal!important;
+    font-size: 11px!important;
+}
+.mobilenavwrap .blockhead{
+    opacity: 1!important;
+    margin-top:0px!important;
+    background: linear-gradient(#2D2D2D, #757677)!important;
+}
+.mobilenavwrapper{
+    border: 1px solid #5A5B5E;
+    border-top: 0px!important;
+    margin-bottom:20px;
+}
+embed,object {
+    max-width: 100%; 
+}
+.logintable .material-icons{display: none;}
+.mytoolbar, .fdforumtools, .userinfotable {
+    border-spacing: 1px!important;
+}
+.mypostbit .userinfotable {
+    border-spacing: 6px!important;
+}
+.bbcodestyle .alt2{background: #E6E6E6!important;border:1px inset!important;padding:5px!important;}
+.bbcodestyle .myfixedtablequote{border-collapse: separate!important;border-spacing: 2px!important;}
+/* ***** styling for 'big' usernames on postbit etc. ***** */
+.bigusername { font-size: 14pt; }
+
+/* ***** small padding on 'thead' elements ***** */
+td.thead, th.thead, div.thead { padding: 4px; }
+
+/* ***** basic styles for multi-page nav elements */
+.pagenav a { text-decoration: none; }
+.pagenav td { padding: 2px 4px 2px 4px; }
+
+/* ***** de-emphasized text */
+.shade, a.shade:link, a.shade:visited { color: #777777; text-decoration: none; }
+a.shade:active, a.shade:hover { color: #FF4400; text-decoration: underline; }
+.tcat .shade, .thead .shade, .tfoot .shade { color: #DDDDDD; }
+
+/* ***** define margin and font-size for elements inside panels ***** */
+.fieldset { margin-bottom: 6px; }
+.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; }
+/* XXXXXXX--------------------- RANGE 0  --------------------XXXXXX */
+/* XXXXXXX---- Style range0 overrides for: 0px to 320px -----XXXXXX */
+/* XXXXXXX--------------------- RANGE 0  --------------------XXXXXX */
+html.range_0 .pagenav .tborder{margin:0 auto!important}
+html.range_0 .newthread,
+html.range_0 .buttondrop2{background:transparent none!important}
+html.range_0 .bbcodestyle .myfixedtablequote .converttodiv{
+border:1px inset!important;padding:5px!important;
+}
+html.range_0 .legacy .headstyle {
+    border: 0px!important;
+    background: linear-gradient(#2D2D2D, #757677)!important;
+    height: 30px!important;
+}
+html.range_0 .legacy .headstyle .thead a{color: #FFFFFF!important;}
+html.range_0 .legacy .thead{padding:0px 4px!important;}
+html.range_0 .legacy .headstyle .thead {
+background: linear-gradient(#2D2D2D, #757677)!important;
+    color: #FFFFFF!important;
+}
+html.range_0 .legacy .custompostbit .alt1 .postbitcontrol2{width:98%!important;}
+html.range_0 .legacy .custompostbit .alt2{ 
+    background: #e1e4f2 none!important;
+    border-bottom:1px solid #d1d1e1!important;
+    min-height: 33px!important;
+}
+html.range_0 .tfoot a, 
+html.range_0 .tfoot .smallfont, 
+html.range_0 .tfoot .smallfont a{    color: #E0E0F6!important;}
+html.range_0 .tborderindex thead .hideonmobile{
+    display:none;
+}
+html.range_0 .footerselector .tfoot a,
+html.range_0 .footerselector .tfoot .smallfont,
+html.range_0 .footerselector .tfoot .smallfont a{color: #fff!important;}
+html.range_0 .mainmenu .vbmenu_control {
+    padding-left:0px!important;
+    padding-right:0px!important;
+}
+html.range_0 .custompostbit .alt1{border:0px!important}
+html.range_0 .pagenav .tborder {
+    background: #F4F4F4 none!important;
+}
+html.range_0 .custompostbit2 {
+    display: block;
+    width: 100%!important;
+}
+html.range_0 .mainnavbar .vbmenu_control {
+    border-bottom: 1px solid #869BBF!important;
+}
+html.range_0 .custompostbit .alt2,
+html.range_0 .legacy .headstyle .thead {
+ border:0px!important;
+}
+html.range_0 .custompostbit2 .alt1,
+html.range_0 .custompostbit2 .alt2 {
+    display: block!important;
+    float: none!important;
+    width:100%!important;
+}
+html.range_0 .custompostbit2 .alt1 {
+    padding:5px 0px!important;
+    border:0px!important;
+}
+html.range_0 .custompostbit2 .alt2 {
+    background: #f5f5f5!important;
+    padding:5px 0px!important;
+    border:0px!important;
+}
+html.range_0 #vB_Editor_001_controls img{display:none}
+html.range_0 .mypostimg .tborder{width:280px!important;}
+html.range_0 .st_bg td{display:block;width:100%;padding:0px;}
+html.range_0 .st_bg div{padding:5px}
+html.range_0 .logintable td{display:table-cell!important;padding:3px 5px!important;}
+html.range_0 .logintable .bginput {
+    width: 110px!important;
+}
+html.range_0 .logintable .loginiconsize  {
+    width: 24px!important;
+}
+html.range_0 .footerselector .tfoot {display:block;width:100%;padding:0px;}
+html.range_0 .footerselector .tfoot div {padding:5px;}
+html.range_0 .footerselector .tfoot select {margin:5px;}
+html.range_0 .logintable .material-icons{display: block;}
+html.range_0 .userinfotable .usernametd{white-space:normal}
+
+/* end range 0-320 */
+/* XXXXXXX--------------------- RANGE 1 --------------------XXXXXX */
+/* XXXXXXX  Style range1 overrides for: 320px to 480px XXXXXX----- */
+/* XXXXXXX--------------------- RANGE 1 --------------------XXXXXX */
+html.range_1 .pagenav .tborder{margin:0 auto!important}
+html.range_1 .newthread,
+html.range_1 .buttondrop2{background:transparent none!important}
+html.range_1 .bbcodestyle .myfixedtablequote .converttodiv{
+border:1px inset!important;padding:5px!important;
+}
+html.range_1 .legacy .headstyle {
+    border: 0px!important;
+background: linear-gradient(#2D2D2D, #757677)!important;
+height: 30px!important;
+}
+html.range_1 .legacy .headstyle .thead a{color: #FFFFFF!important;}
+html.range_1 .legacy .thead{padding:0px 4px!important;}
+html.range_1 .legacy .headstyle .thead {
+background: linear-gradient(#2D2D2D, #757677)!important;
+    color: #FFFFFF!important;
+}
+html.range_1 .legacy .custompostbit .alt1 .postbitcontrol2{width:98%!important;}
+html.range_1 .legacy .custompostbit .alt2{ 
+    background: #e1e4f2 none!important;
+    border-bottom:1px solid #d1d1e1!important;
+    min-height: 33px!important;
+}
+html.range_1 .tfoot a, 
+html.range_1 .tfoot .smallfont, 
+html.range_1 .tfoot .smallfont a{    color: #E0E0F6!important;}
+html.range_1 .tborderindex thead .hideonmobile{
+    display:none;
+}
+html.range_1 body {
+    margin:0px!important
+}
+html.range_1 .footerselector .tfoot a,
+html.range_1 .footerselector .tfoot .smallfont,
+html.range_1 .footerselector .tfoot .smallfont a{color: #fff!important;}
+html.range_1 .pagenav td {
+    border-left: 0px!important;
+    border-right: 0px!important;
+    border-bottom: 0px!important;
+}
+html.range_1 .mainmenu .vbmenu_control {
+    padding-left:0px!important;
+    padding-right:0px!important;
+}
+html.range_1 .custompostbit .alt1{border:0px!important}
+html.range_1 .pagenav .tborder {
+    background: #F4F4F4 none!important;
+}
+html.range_1 .pagenav td {
+    font-weight: normal;
+    min-width: 12px!important;
+    padding: 3px 8px;
+}
+html.range_1 .pagenav td {
+    margin-right: 2px;
+    display: inline-block;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+}
+html.range_1 .mainnavbar .vbmenu_control {
+    border-bottom: 1px solid #869BBF!important;
+}
+html.range_1 .custompostbit .alt2,
+html.range_1 .legacy .headstyle .thead {
+ border:0px!important;
+}
+html.range_1 .custompostbit2 .alt1,
+html.range_1 .custompostbit2 .alt2 {
+    background: transparent none!important;
+}
+html.range_1 .mypostimg .tborder{width:100%!important;}
+html.range_1 .st_bg td{display:block;width:100%;padding:0px;}
+html.range_1 .st_bg div{padding:5px}
+html.range_1 .logintable td{display:table-cell!important;padding:3px 5px!important;}
+html.range_1 .logintable .bginput  {
+    width: 130px!important;
+}
+html.range_1 .logintable .loginiconsize  {
+    width: 24px!important;
+}
+
+html.range_1 .footerselector .tfoot {display:block;width:100%;padding:0px;}
+html.range_1 .footerselector .tfoot div {padding:5px;}
+html.range_1 .footerselector .tfoot select {margin:5px;}
+html.range_1 .logintable .material-icons{display: block;}
+html.range_1 .userinfotable .usernametd{white-space:normal}
+
+/* end range1 320-480 */
+
+
+/* XXXXXXX--------------------- RANGE 2 --------------------XXXXXX */
+/* XXXXXXX--- Style range2 overrides for: 480px to 780px ---XXXXXX */
+/* XXXXXXX--------------------- RANGE 2 --------------------XXXXXX */
+html.range_2 .tborderindex thead .hideonmobile{
+    display:none;
+}
+html.range_2 .mainnavbar .vbmenu_control {
+    border-bottom: 1px solid #869BBF!important;
+}
+html.range_2 .footerselector .tfoot a,
+html.range_2 .footerselector .tfoot .smallfont,
+html.range_2 .footerselector .tfoot .smallfont a{color: #fff!important;}
+html.range_2 .userinfotable .usernametd{white-space:normal}
+
+/* Desktops and laptops ----------- */
+/* XXXXXXX--------------------- RANGE 5 --------------------XXXXXX */
+/* XXXXXXX-------- Style overrides for: above 1280px -------XXXXXX */
+/* XXXXXXX--------------------- RANGE 5 --------------------XXXXXX */
+html.range_4 .userinfodetails{width:100%;}
+html.range_5 .userinfodetails{width:100%;}
+html.range_5 .userinfotable .usernametd{white-space:nowrap}
+
+.infouser { border: 1px solid #101A2C;background-image: linear-gradient(#008BC5, #211753);margin-top: 2px;padding: 5px 3px 5px 5px; color: #FFF}
+.infouser a {color: #fff;}
+.infouser a:hover {color: #fff;}
+
+.spoiler {
+    color: #000;
+    display: inline-block;
+}
+.reputation_ {color: #fff !important; margin-left: 1em;}
+
+html.range_0 .post_thanks_postbit_legacy td,
+html.range_1 .post_thanks_postbit_legacy td {
+ display: block; width:100%; box-sizing: border-box;
+}
+
+.postbit-icons img {vertical-align: middle;}
+
+@media screen and (max-width: 700px) {
+  .header-wrapper table td { display: block; }
+  .header-wrapper table td img { max-width: 100%; height: auto; }
+}
+</style>
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_important.css?v=373">
+
+
+<!-- / CSS Stylesheet -->
+
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-0LGH01465C&amp;l=dataLayer&amp;cx=c&amp;gtm=457e54n0za200&amp;tag_exp=102887800~103051953~103077950~103106314~103106316~103116025~103130360~103130362~103200001"></script><script type="text/javascript" src="clientscript/yui/yahoo-dom-event/yahoo-dom-event.js?v=373"></script>
+<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=373"></script>
+<script type="text/javascript">
+<!--
+var SESSIONURL = "s=31eac0d5eec0a0fedf574341763a697e&";
+var SECURITYTOKEN = "guest";
+var IMGDIR_MISC = "https://www.raceyou.ru/images/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// -->
+</script>
+<script type="text/javascript" src="clientscript/vbulletin_global.js?v=373"></script>
+<script type="text/javascript" src="clientscript/vbulletin_menu.js?v=373"></script>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+// Called by Adapt.js
+function myCallback(i, width) {
+  // Alias HTML tag.
+  var html = document.documentElement;
+
+  // Find all instances of range_NUMBER and kill 'em.
+  html.className = html.className.replace(/(\s+)?range_\d/g, '');
+
+  // Check for valid range.
+  if (i > -1) {
+    // Add class="range_NUMBER"
+    html.className += ' range_' + i;
+  }
+
+  // Note: Not making use of width here, but I'm sure
+  // you could think of an interesting way to use it.
+}
+
+// Edit to suit your needs.
+var ADAPT_CONFIG = {
+  // false = Only run once, when page first loads.
+  // true = Change on window resize and page tilt.
+  dynamic: true,
+
+  // Optional callback... myCallback(i, width)
+  callback: myCallback,
+
+  // First range entry is the minimum.
+  // Last range entry is the maximum.
+  // Separate ranges by "to" keyword.
+  range: [
+    '0 to 320',
+    '320 to 480',
+    '480 to 780',
+    '780 to 980',
+    '980 to 1280',
+    '1280'
+  ]
+};
+</script>
+<script type="text/javascript" src="https://www.raceyou.ru/images/raceyouru/js/adapt.min.js"></script>
+<script type="text/javascript">
+  'article aside footer header nav section time'.replace(/\w+/g,function(n){document.createElement(n)})
+</script>
+
+<link href="https://www.raceyou.ru/images/raceyouru/css/stvb3r.css" rel="stylesheet" type="text/css">
+<link href="https://www.raceyou.ru/images/raceyouru/css/st-responsive.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(function(){
+    $(".mobilenavblock").css("display","none");
+});
+</script>
+
+<!--[if IE]>
+<link href="images/raceyouru/css/iecssfix.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if lte IE 7]>
+<link href="images/raceyouru/css/iesevencssfix.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+<![endif]--><script type="text/javascript" src="https://www.raceyou.ru/clientscript/ncode_imageresizer.js?v=1.0.2"></script>
+<script type="text/javascript">
+<!--
+NcodeImageResizer.MODE = 'newwindow';
+
+NcodeImageResizer.MAXWIDTH = 1100;
+NcodeImageResizer.MAXHEIGHT = 2500;
+
+
+NcodeImageResizer.MAXWIDTHSIGS = 400;
+NcodeImageResizer.MAXHEIGHTSIGS = 100;
+
+NcodeImageResizer.BBURL = 'https://www.raceyou.ru';
+
+vbphrase['ncode_imageresizer_warning_small'] = 'РќР°Р¶РјРёС‚Рµ Р·РґРµСЃСЊ, С‡С‚РѕР±С‹ РїРѕСЃРјРѕС‚СЂРµС‚СЊ РёСЃС…РѕРґРЅРѕРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ.';
+vbphrase['ncode_imageresizer_warning_filesize'] = 'Р­С‚Рѕ РёР·РѕР±СЂР°Р¶РµРЅРёРµ Р±С‹Р»Рѕ РёР·РјРµРЅРµРЅРѕ. РќР°Р¶РјРёС‚Рµ Р·РґРµСЃСЊ, С‡С‚РѕР±С‹ РїСЂРѕСЃРјРѕС‚СЂРµС‚СЊ РёСЃС…РѕРґРЅРѕРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ. РћСЂРёРіРёРЅР°Р»СЊРЅРѕРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ РёР·РјРµРЅРµРЅРѕ %1$s x %2$s Рё РІРµСЃРёС‚ %3$s РљР‘.';
+vbphrase['ncode_imageresizer_warning_no_filesize'] = 'Р­С‚Рѕ РёР·РѕР±СЂР°Р¶РµРЅРёРµ Р±С‹Р»Рѕ РёР·РјРµРЅРµРЅРѕ. РќР°Р¶РјРёС‚Рµ Р·РґРµСЃСЊ, С‡С‚РѕР±С‹ РїСЂРѕСЃРјРѕС‚СЂРµС‚СЊ РёСЃС…РѕРґРЅРѕРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ. РћСЂРёРіРёРЅР°Р»СЊРЅРѕРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ РёР·РјРµСЂРµРЅРѕ %1$s x %2$s.';
+vbphrase['ncode_imageresizer_warning_fullsize'] = 'РќР°Р¶РјРёС‚Рµ Р·РґРµСЃСЊ, С‡С‚РѕР±С‹ РїСЂРѕСЃРјРѕС‚СЂРµС‚СЊ РјР°Р»РµРЅСЊРєРѕРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ.';
+//-->
+</script>
+
+<style type="text/css">
+
+table.ncode_imageresizer_warning {
+background: #d9d9d9; 
+color: #000000; 
+border: 1px solid #939393; 
+	cursor: pointer;
+}
+
+table.ncode_imageresizer_warning td {
+	font-size: 10px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+table.ncode_imageresizer_warning td.td1 {
+	padding: 5px;
+}
+
+table.ncode_imageresizer_warning td.td1 {
+	padding: 2px;
+}
+
+</style>
+	<title>RaceYou! Р’СЃРµСЂРѕСЃСЃРёР№СЃРєРёР№ РІРёРЅРґСЃРµСЂС„РёРЅРі С„РѕСЂСѓРј</title>
+
+<style>.fluidvids {width: 100%; height: 315px; max-width: 560px; max-height: 315px; position: relative; padding: 0 !important;}.fluidvids-item {position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;}</style></head>
+<body>
+<!-- logo -->
+<div id="top" class="header-wrapper">
+<table class="header" border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+<tbody><tr>
+	<td class="logo" align="left"><a href="index.php?s=31eac0d5eec0a0fedf574341763a697e"><img src="https://www.raceyou.ru/images/mlogo_01.jpg" border="0" alt="RaceYou! Р’СЃРµСЂРѕСЃСЃРёР№СЃРєРёР№ РІРёРЅРґСЃРµСЂС„РёРЅРі С„РѕСЂСѓРј" title="RaceYou! Р’СЃРµСЂРѕСЃСЃРёР№СЃРєРёР№ РІРёРЅРґСЃРµСЂС„РёРЅРі С„РѕСЂСѓРј"></a></td>
+	<td align="right" id="header_right_cell">
+		&nbsp;
+	</td>
+	<td align="right">
+	
+
+
+
+
+
+
+
+
+
+
+
+	</td>
+</tr>
+</tbody></table>
+</div>
+<!-- /logo -->
+
+<!-- content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 5px 0px 5px" align="left" class="paddingmobile">
+
+
+
+
+
+
+<br>
+
+<!-- breadcrumb, login, pm info -->
+<table class="tborder st_bg" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tbody><tr>
+	<td class="alt1" width="100%">
+		
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr valign="bottom">
+				<td><a href="#" onclick="history.back(1); return false;"><img src="https://www.raceyou.ru/images/misc/navbits_start.gif" alt="Р’РµСЂРЅСѓС‚СЊСЃСЏ" border="0" title="Р’РµСЂРЅСѓС‚СЊСЃСЏ"></a></td>
+				<td class="hideonmobile">&nbsp;</td>
+				<td width="100%"><span class="navbar"><a href="index.php?s=31eac0d5eec0a0fedf574341763a697e" accesskey="1">RaceYou! Р’СЃРµСЂРѕСЃСЃРёР№СЃРєРёР№ РІРёРЅРґСЃРµСЂС„РёРЅРі С„РѕСЂСѓРј</a></span> </td>
+			</tr>
+			<tr>
+				<td class="navbar" style="font-size:10pt; padding-top:1px" colspan="3"><a href="/memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=1"><img class="inlineimg" src="https://www.raceyou.ru/images/misc/navbits_finallink_ltr.gif" alt="РџРµСЂРµР·Р°РіСЂСѓР·РёС‚СЊ СЃС‚СЂР°РЅРёС†Сѓ" border="0" title="РџРµСЂРµР·Р°РіСЂСѓР·РёС‚СЊ СЃС‚СЂР°РЅРёС†Сѓ"></a> <strong>
+	РЎРѕРѕР±С‰РµРЅРёРµ С„РѕСЂСѓРјР°
+
+</strong></td>
+			</tr>
+			</tbody></table>
+		
+	</td>
+
+	<td class="alt2" nowrap="nowrap" style="padding:0px">
+		<!-- login form -->
+		<form action="login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+		<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=373"></script>
+		<table class="logintable" cellpadding="0" cellspacing="3" border="0">
+		<tbody><tr>
+			<td class="smallfont loginiconsize" style="white-space: nowrap;"><label for="navbar_username" class="hideonmobile">РРјСЏ</label><i class="material-icons">оџЅ</i></td>
+			<td><input type="text" class="bginput" style="font-size: 11px" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="РРјСЏ" onfocus="if (this.value == 'РРјСЏ') this.value = '';"></td>
+			<td class="smallfont" nowrap="nowrap"><label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" tabindex="103" id="cb_cookieuser_navbar" accesskey="c">Р—Р°РїРѕРјРЅРёС‚СЊ?</label></td>
+		</tr>
+		<tr>
+			<td class="smallfont loginiconsize"><label class="hideonmobile" for="navbar_password">РџР°СЂРѕР»СЊ</label><i class="material-icons">оѓљ</i></td>
+			<td><input type="password" class="bginput" style="font-size: 11px" name="vb_login_password" id="navbar_password" size="10" tabindex="102" placeholder="Password"></td>
+			<td><input type="submit" class="button" value="Р’С…РѕРґ" tabindex="104" title="Р’РІРµРґРёС‚Рµ РІР°С€Рµ РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ Рё РїР°СЂРѕР»СЊ, С‡С‚РѕР±С‹ РІРѕР№С‚Рё, РёР»Рё РЅР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ 'Р РµРіРёСЃС‚СЂР°С†РёСЏ', С‡С‚РѕР±С‹ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ." accesskey="s"></td>
+		</tr>
+
+		</tbody></table>
+		<input type="hidden" name="s" value="31eac0d5eec0a0fedf574341763a697e">
+		<input type="hidden" name="securitytoken" value="guest">
+		<input type="hidden" name="do" value="login">
+		<input type="hidden" name="vb_login_md5password">
+		<input type="hidden" name="vb_login_md5password_utf">
+		</form>
+		<!-- / login form -->
+	</td>
+
+</tr>
+</tbody></table>
+<!-- / breadcrumb, login, pm info -->
+
+
+<!-- nav buttons bar -->
+<div class="mobilenavwrapper">
+<div class="mobilenavwrap collapse"> 
+<a class="home" href="index.php?s=31eac0d5eec0a0fedf574341763a697e"><img src="https://www.raceyou.ru/images/raceyouru/homeicon.png" alt="Home" title="Home"></a>
+<a class="iconnew" href="search.php?s=31eac0d5eec0a0fedf574341763a697e&amp;do=getnew&amp;exclude=81,83,84,85,133,101,88,87,82,91,92,93,134,102,129,103,136,137,138,142,177,145,171,36,38,131,111,180" accesskey="2" "=""><img src="images/raceyouru/icon_new.png" alt="new" title="new"></a>
+<a class="collapse" style="float:right" href="#top" onclick="return toggle_collapse('forumbit_')"><img src="https://www.raceyou.ru/images/raceyouru/burgericon.png" alt="Menu" title="Menu"></a>
+  <h4 class="blockhead">Menu</h4>
+</div>
+<div id="collapseobj_forumbit_" style="display: none;" class="mobilenavblock">
+<!-- IE7 USER NAVBAR -->
+<!-- IE7 END USER NAVBAR -->
+
+<!-- nav buttons bar -->
+<div class="mainnavbar" style="padding:1px; border-top-width:0px">
+	<table class="mainmenu" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+	<tbody><tr align="center">
+<td class="vbmenu_control"><a href="http://www.raceyou.ru/search.php?do=getnew&amp;exclude=
+81,83,84,85,133,101,88,87,82,91,92,93,134,102,129,103,136,137,138,142,177,145,171,36,105,38,131">
+<img src="/images/misc/news.gif" alt="" border="0" height="9" width="8">&nbsp;New</a></td>
+		
+		
+			<td class="vbmenu_control"><a href="register.php?s=31eac0d5eec0a0fedf574341763a697e" rel="nofollow">Р РµРіРёСЃС‚СЂР°С†РёСЏ</a></td>
+		
+		<td class="vbmenu_control"><a rel="bestuser" href="/sailnumbers.php?s=31eac0d5eec0a0fedf574341763a697e">Sail numbers</a></td><td class="vbmenu_control"><a href="http://www.raceyou.ru/blog.php?do=bloglist"><img src="/images/misc/bl.gif" alt="" border="0" height="9" width="12">&nbsp;Р‘Р»РѕРіРё</a></td><td class="vbmenu_control"><a href="https://www.raceyou.ru/gallery"><img src="/images/misc/fotogal_ico.gif" alt="Р¤РѕС‚РѕРіСЂР°С„РёРё" border="0" height="9" width="13" title="Р¤РѕС‚РѕРіСЂР°С„РёРё">
+Р¤РѕС‚РѕРіСЂР°С„РёРё</a></td>
+		<td class="vbmenu_control"><a href="faq.php?s=31eac0d5eec0a0fedf574341763a697e" accesskey="5">РџСЂР°РІРёР»Р°</a></td>
+
+                <td class="vbmenu_control"><a href="competitions.php">РљР°Р»РµРЅРґР°СЂСЊ СЃРѕСЂРµРІРЅРѕРІР°РЅРёР№</a></td>
+
+		
+			<td class="vbmenu_control"><a href="memberlist.php?s=31eac0d5eec0a0fedf574341763a697e">РџРѕР»СЊР·РѕРІР°С‚РµР»Рё</a></td>
+		
+		
+			
+			
+		
+		
+		
+		</tr>
+	</tbody></table>
+</div>
+<!-- / nav buttons bar -->
+
+
+</div></div><!-- / end mobilenavwrapper 2 divs collapse -->
+
+
+<br class="forumtitlehide">
+
+
+
+
+
+
+<!-- NAVBAR POPUP MENUS -->
+
+	
+	
+	
+	
+	
+<!-- / NAVBAR POPUP MENUS -->
+
+<!-- PAGENAV POPUP -->
+	<div class="vbmenu_popup" id="pagenav_menu" style="display:none">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tbody><tr>
+			<td class="thead" nowrap="nowrap">Рљ СЃС‚СЂР°РЅРёС†Рµ...</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+			<form action="index.php" method="get" onsubmit="return this.gotopage()" id="pagenav_form">
+				<input type="text" class="bginput" id="pagenav_itxt" style="font-size:11px" size="4">
+				<input type="button" class="button" id="pagenav_ibtn" value="Р’РїРµСЂС‘Рґ">
+			</form>
+			</td>
+		</tr>
+		</tbody></table>
+	</div>
+<!-- / PAGENAV POPUP -->
+
+
+
+
+
+
+
+
+<table class="tborder errortext" cellpadding="6" cellspacing="1" border="0" width="70%" align="center">
+<tbody><tr>
+	<td class="tcat">РЎРѕРѕР±С‰РµРЅРёРµ С„РѕСЂСѓРјР°</td>
+</tr>
+<tr>
+	<td class="panelsurround" align="center">
+	<div class="panel">
+		<div align="left">
+
+		
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=373"></script>
+			<form action="login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+			<input type="hidden" name="do" value="login">
+			<input type="hidden" name="url" value="/memberlist.php?&amp;pp=100&amp;order=asc&amp;sort=username&amp;ltr=A&amp;page=1">
+			<input type="hidden" name="vb_login_md5password">
+			<input type="hidden" name="vb_login_md5password_utf">
+			
+
+			<input type="hidden" name="s" value="31eac0d5eec0a0fedf574341763a697e">
+			<input type="hidden" name="securitytoken" value="guest">
+
+			<!-- permission error message - user not logged in -->
+
+
+			<div class="smallfont">Р’С‹ РЅРµ Р°РІС‚РѕСЂРёР·РѕРІР°РЅС‹ РЅР° С„РѕСЂСѓРјРµ РёР»Рё РЅРµ РёРјРµРµС‚Рµ РґРѕСЃС‚СѓРїР° Рє СЌС‚РѕР№ СЃС‚СЂР°РЅРёС†Рµ. Р­С‚Рѕ РјРѕРіР»Рѕ РїСЂРѕРёР·РѕР№С‚Рё РїРѕ РѕРґРЅРѕР№ РёР· РЅРµСЃРєРѕР»СЊРєРёС… РїСЂРёС‡РёРЅ:</div>
+
+			<ol>
+				<li class="smallfont">Р’С‹ РЅРµ Р°РІС‚РѕСЂРёР·РѕРІР°РЅС‹ РЅР° С„РѕСЂСѓРјРµ. Р’РІРµРґРёС‚Рµ РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ Рё РїР°СЂРѕР»СЊ Рё РїРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰С‘ СЂР°Р·.</li>
+				<li class="smallfont">РЈ РІР°СЃ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РїСЂР°РІ РґР»СЏ РѕР±СЂР°С‰РµРЅРёСЏ Рє СЌС‚РѕР№ СЃС‚СЂР°РЅРёС†Рµ. Р’РѕР·РјРѕР¶РЅРѕ, РІС‹ РїС‹С‚Р°РµС‚РµСЃСЊ РѕР±СЂР°С‚РёС‚СЊСЃСЏ Рє С„СѓРЅРєС†РёСЏРј Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР° РёР»Рё Рє РґСЂСѓРіРёРј РїСЂРёРІРёР»РµРіРёСЂРѕРІР°РЅРЅС‹Рј С„СѓРЅРєС†РёСЏРј.</li>
+				<li class="smallfont">Р’РѕР·РјРѕР¶РЅРѕ, Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ РѕС‚РєР»СЋС‡РёР» РІР°С€Сѓ СѓС‡С‘С‚РЅСѓСЋ Р·Р°РїРёСЃСЊ, РёР»Рё РІС‹ РЅРµ Р°РєС‚РёРІРёСЂРѕРІР°РЅС‹ РЅР° С„РѕСЂСѓРјРµ.</li>
+			</ol>
+
+			<fieldset class="fieldset">
+				<legend>Р’С…РѕРґ</legend>
+				<table cellpadding="0" cellspacing="3" border="0" align="center">
+				<tbody><tr>
+					<td>РРјСЏ:<br><input type="text" class="bginput" name="vb_login_username" size="50" accesskey="u" tabindex="1"></td>
+				</tr>
+				<tr>
+					<td>РџР°СЂРѕР»СЊ:<br><input type="password" class="bginput" name="vb_login_password" size="50" tabindex="1"></td>
+				</tr>
+				<tr>
+					<td>
+						<span style="float:right"><a href="login.php?s=31eac0d5eec0a0fedf574341763a697e&amp;do=lostpw">Р—Р°Р±С‹Р»Рё РїР°СЂРѕР»СЊ?</a></span>
+						<label for="cb_cookieuser"><input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser" tabindex="1">Р—Р°РїРѕРјРЅРёС‚СЊ?</label>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						<input type="submit" class="button" value="Р’С…РѕРґ" accesskey="s" tabindex="1">
+						<input type="reset" class="button" value="РЎР±СЂРѕСЃ" accesskey="r" tabindex="1">
+					</td>
+				</tr>
+				</tbody></table>
+			</fieldset>
+
+			<div class="smallfont">Р”Р»СЏ РїСЂРѕСЃРјРѕС‚СЂР° СЌС‚РѕР№ СЃС‚СЂР°РЅРёС†С‹ РЅРµРѕР±С…РѕРґРёРјРѕ <a href="register.php?s=31eac0d5eec0a0fedf574341763a697e&amp;do=signup">Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ</a>.</div>
+			</form>
+
+			<!-- / permission error message - user not logged in -->
+		
+
+		</div>
+	</div>
+	<!--
+	<div style="margin-top:6px">
+		<input type="submit" class="button" value="Р’РµСЂРЅСѓС‚СЊСЃСЏ" accesskey="s" onclick="history.back(1); return false" />
+	</div>
+	-->
+	</td>
+</tr>
+</tbody></table>
+
+<br>
+
+
+<!-- forum jump -->
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tbody><tr>
+	<td><div class="smallfont forumjump" style="text-align:left; white-space:nowrap">
+	<form action="https://www.raceyou.ru/forumdisplay.php" method="get">
+	<input type="hidden" name="s" value="31eac0d5eec0a0fedf574341763a697e">
+	<input type="hidden" name="daysprune" value="">
+	<strong>Р‘С‹СЃС‚СЂС‹Р№ РїРµСЂРµС…РѕРґ</strong><br>
+	<select style="padding:4px;" name="f" onchange="this.form.submit();">
+		<optgroup label="РќР°РІРёРіР°С†РёСЏ РїРѕ С„РѕСЂСѓРјСѓ">
+			<option value="cp">РњРѕР№ РєР°Р±РёРЅРµС‚</option>
+			<option value="pm">Р›РёС‡РЅС‹Рµ СЃРѕРѕР±С‰РµРЅРёСЏ</option>
+			<option value="subs">РџРѕРґРїРёСЃРєРё</option>
+			<option value="wol">РљС‚Рѕ РЅР° С„РѕСЂСѓРјРµ</option>
+			<option value="search">РџРѕРёСЃРє РїРѕ С„РѕСЂСѓРјСѓ</option>
+			<option value="home">Р“Р»Р°РІРЅР°СЏ СЃС‚СЂР°РЅРёС†Р° С„РѕСЂСѓРјР°</option>
+		</optgroup>
+		
+		<optgroup label="Р Р°Р·РґРµР»С‹">
+		<option value="1" class="fjdpth0"> RaceYou!</option>
+<option value="27" class="fjdpth1">&nbsp; &nbsp;  Р’РёРЅРґСЃРµСЂС„РёРЅРі - РѕР±С‰РёР№ С„РѕСЂСѓРј</option>
+<option value="123" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Р’РёРЅРґСЃРµСЂС„РµСЂС‹ РіРѕРґР°!</option>
+<option value="147" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Р°СЂС…РёРІ</option>
+<option value="28" class="fjdpth1">&nbsp; &nbsp;  Р”Р»СЏ РЅРѕРІРёС‡РєРѕРІ</option>
+<option value="72" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РљРѕРїРёР»РєР° Р·РЅР°РЅРёР№</option>
+<option value="122" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Р›РµС‡РёРј РїРѕ С„РѕС‚РѕРіСЂР°С„РёРё :-)</option>
+<option value="178" class="fjdpth1">&nbsp; &nbsp;  РљРѕРјРјРµСЂС‡РµСЃРєРёР№ СЂР°Р·РґРµР»</option>
+<option value="130" class="fjdpth1">&nbsp; &nbsp;  РћС‚С‡РµС‚С‹ Рё СЂР°СЃСЃРєР°Р·С‹</option>
+<option value="172" class="fjdpth1">&nbsp; &nbsp;  РЎРѕСЂРµРІРЅРѕРІР°РЅРёСЏ Рё С„РµСЃС‚РёРІР°Р»Рё</option>
+<option value="55" class="fjdpth1">&nbsp; &nbsp;  РЎРїРѕСЂС‚РёРІРЅС‹Р№ СЂР°Р·РґРµР»</option>
+<option value="71" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РљРѕРЅСЃСѓР»СЊС‚Р°С†РёРё РїРѕ РіРѕРЅРѕС‡РЅС‹Рј РїСЂР°РІРёР»Р°Рј</option>
+<option value="112" class="fjdpth1">&nbsp; &nbsp;  РЎРµСЂС„ СЃС‚Р°РЅС†РёРё Рё СЏС…С‚РєР»СѓР±С‹</option>
+<option value="45" class="fjdpth1">&nbsp; &nbsp;  Р‘РµР·РѕРїР°СЃРЅРѕСЃС‚СЊ РЅР° РІРѕРґРµ Рё РјРµРґРёС†РёРЅР°</option>
+<option value="115" class="fjdpth0"> РњР°С‚С‡Р°СЃС‚СЊ</option>
+<option value="48" class="fjdpth1">&nbsp; &nbsp;  РњР°С‚С‡Р°СЃС‚СЊ - РѕР±С‰РёР№ С„РѕСЂСѓРј</option>
+<option value="59" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Р‘РёР±Р»РёРѕС‚РµРєР° РёРЅСЃС‚СЂСѓРєС†РёР№</option>
+<option value="117" class="fjdpth1">&nbsp; &nbsp;  РћС‚Р·С‹РІС‹ Рё С‚РµСЃС‚С‹</option>
+<option value="121" class="fjdpth1">&nbsp; &nbsp;  РљС‚Рѕ С‡С‚Рѕ СЃРєР°Р¶РµС‚ РїСЂРѕ СЌС‚Сѓ РјРѕРґРµР»СЊ?</option>
+<option value="109" class="fjdpth1">&nbsp; &nbsp;  РџРѕРјРѕС‰СЊ РІ РІС‹Р±РѕСЂРµ РѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ</option>
+<option value="114" class="fjdpth1">&nbsp; &nbsp;  Р РµРјРѕРЅС‚ РјР°С‚С‡Р°СЃС‚Рё</option>
+<option value="118" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Р РµРјРѕРЅС‚РЅС‹Рµ РјР°СЃС‚РµСЂСЃРєРёРµ</option>
+<option value="119" class="fjdpth1">&nbsp; &nbsp;  РљР»СѓР± СЃР°РјРѕРґРµР»РєРёРЅС‹С…</option>
+<option value="79" class="fjdpth0"> Р”РёСЃС†РёРїР»РёРЅС‹ Рё РєР»Р°СЃСЃС‹ РІ РІРёРЅРґСЃРµСЂС„РёРЅРіРµ</option>
+<option value="56" class="fjdpth1">&nbsp; &nbsp;  Formula Windsurfing</option>
+<option value="58" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РљРѕРїРёР»РєР° С„РѕСЂРјСѓР»СЊРЅС‹С… Р·РЅР°РЅРёР№</option>
+<option value="124" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РџРѕРјРѕС‰СЊ РІ РІС‹Р±РѕСЂРµ С„РѕСЂРјСѓР»СЊРЅРѕР№ РјР°С‚С‡Р°СЃС‚Рё</option>
+<option value="76" class="fjdpth1">&nbsp; &nbsp;  РЎР»Р°Р»РѕРј</option>
+<option value="125" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РџРѕРјРѕС‰СЊ РІ РІС‹Р±РѕСЂРµ СЃР»Р°Р»РѕРјРЅРѕР№ РјР°С‚С‡Р°СЃС‚Рё</option>
+<option value="75" class="fjdpth1">&nbsp; &nbsp;  Freestyle!</option>
+<option value="104" class="fjdpth1">&nbsp; &nbsp;  Wave</option>
+<option value="77" class="fjdpth1">&nbsp; &nbsp;  RS:X Рё T293</option>
+<option value="120" class="fjdpth1">&nbsp; &nbsp;  Speed</option>
+<option value="173" class="fjdpth1">&nbsp; &nbsp;  Р“РёРґСЂРѕС„РѕР№Р»</option>
+<option value="149" class="fjdpth0"> Р—РёРјРЅРёР№ РІРёРЅРґСЃРµСЂС„РёРЅРі Рё СЃРЅРѕСѓРєР°Р№С‚РёРЅРі</option>
+<option value="46" class="fjdpth1">&nbsp; &nbsp;  Р—РёРјРЅРёР№ РІРёРЅРґСЃРµСЂС„РёРЅРі</option>
+<option value="151" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РњР°С‚С‡Р°СЃС‚СЊ РґР»СЏ Р·РёРјРЅРµРіРѕ РІРёРЅРґСЃРµСЂС„РёРЅРіР°</option>
+<option value="152" class="fjdpth1">&nbsp; &nbsp;  Р—РёРјРЅРёР№ РєР°Р№С‚РёРЅРі</option>
+<option value="166" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РњР°С‚С‡Р°СЃС‚СЊ РґР»СЏ Р·РёРјРЅРµРіРѕ РєР°Р№С‚РёРЅРіР°</option>
+<option value="150" class="fjdpth1">&nbsp; &nbsp;  Р—РёРјРЅРёРµ СЃРѕСЂРµРІРЅРѕРІР°РЅРёСЏ</option>
+<option value="159" class="fjdpth0"> РўР° Р¶Рµ РІРѕРґР°!</option>
+<option value="135" class="fjdpth1">&nbsp; &nbsp;  РљР°Р№С‚СЃРµСЂС„РёРЅРі</option>
+<option value="156" class="fjdpth1">&nbsp; &nbsp;  SUP</option>
+<option value="179" class="fjdpth1">&nbsp; &nbsp;  Р’РёРЅРіС„РѕР№Р»</option>
+<option value="158" class="fjdpth1">&nbsp; &nbsp;  РЎРµСЂС„РёРЅРі</option>
+<option value="39" class="fjdpth0"> РџСѓС‚РµС€РµСЃС‚РІРёСЏ</option>
+<option value="40" class="fjdpth1">&nbsp; &nbsp;  Р РѕСЃСЃРёСЏ, РЈРєСЂР°РёРЅР° Рё Р‘РµР»РѕСЂСѓСЃСЃРёСЏ</option>
+<option value="41" class="fjdpth1">&nbsp; &nbsp;  Р•РіРёРїРµС‚</option>
+<option value="42" class="fjdpth1">&nbsp; &nbsp;  Р•РІСЂРѕРїР°</option>
+<option value="43" class="fjdpth1">&nbsp; &nbsp;  Р’РµСЃСЊ РѕСЃС‚Р°Р»СЊРЅРѕР№ РјРёСЂ</option>
+<option value="44" class="fjdpth1">&nbsp; &nbsp;  Р’РёР·С‹, С‚СѓСЂР°РіРµРЅС‚СЃС‚РІР°, Р°РІРёР°РєРѕРјРїР°РЅРёРё</option>
+<option value="80" class="fjdpth0"> РџСЂРѕРґР°Р¶Р° РјР°С‚С‡Р°СЃС‚Рё</option>
+<option value="81" class="fjdpth1">&nbsp; &nbsp;  РџСЂРѕРґР°Р¶Р° РЅРѕРІРѕРіРѕ РѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ</option>
+<option value="83" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Р”РѕСЃРєРё</option>
+<option value="84" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РџР°СЂСѓСЃР°</option>
+<option value="85" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РњР°С‡С‚С‹, РіРёРєРё</option>
+<option value="133" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РЈРґР»РёРЅРёС‚РµР»Рё, С€Р°СЂРЅРёСЂС‹</option>
+<option value="101" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РџР»Р°РІРЅРёРєРё</option>
+<option value="88" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Р“РёРґСЂРѕРѕРґРµР¶РґР°, С‚СЂР°РїРµС†РёРё</option>
+<option value="87" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Р Р°Р·РЅРѕРµ</option>
+<option value="82" class="fjdpth1">&nbsp; &nbsp;  РџСЂРѕРґР°Р¶Р° РѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р‘.РЈ.</option>
+<option value="91" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Р”РѕСЃРєРё Рё РєРѕРјРїР»РµРєС‚С‹</option>
+<option value="92" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РџР°СЂСѓСЃР° Рё РІРµСЂС…СѓС€РєРё</option>
+<option value="93" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РњР°С‡С‚С‹, РіРёРєРё</option>
+<option value="134" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РЈРґР»РёРЅРёС‚РµР»Рё, С€Р°СЂРЅРёСЂС‹</option>
+<option value="102" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  РџР»Р°РІРЅРёРєРё</option>
+<option value="129" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Р“РёРґСЂРѕРѕРґРµР¶РґР°, С‚СЂР°РїРµС†РёРё</option>
+<option value="103" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Р Р°Р·РЅРѕРµ</option>
+<option value="136" class="fjdpth1">&nbsp; &nbsp;  Formula windsurfing</option>
+<option value="142" class="fjdpth1">&nbsp; &nbsp;  РљР°Р№С‚СЃРµСЂС„РёРЅРі</option>
+<option value="177" class="fjdpth1">&nbsp; &nbsp;  Р“РёРґСЂРѕС„РѕР№Р»</option>
+<option value="180" class="fjdpth1">&nbsp; &nbsp;  Р’РёРЅРіС„РѕР№Р»</option>
+<option value="145" class="fjdpth1">&nbsp; &nbsp;  Р—РёРјРЅРёР№ РІРёРЅРґСЃРµСЂС„РёРЅРі</option>
+<option value="171" class="fjdpth1">&nbsp; &nbsp;  SUP</option>
+<option value="176" class="fjdpth0"> РџСЂРѕС‡РёРµ РѕР±СЉСЏРІР»РµРЅРёСЏ</option>
+<option value="36" class="fjdpth1">&nbsp; &nbsp;  РљСѓРїР»СЋ, РѕР±РјРµРЅСЏСЋ, РїРѕРґР°СЂСЋ</option>
+<option value="105" class="fjdpth1">&nbsp; &nbsp;  РС‰Сѓ РїРѕРїСѓС‚С‡РёРєР° (РїРѕРїСѓС‚С‡РёС†Сѓ)!</option>
+<option value="38" class="fjdpth1">&nbsp; &nbsp;  Р Р°Р±РѕС‚Р° Рё СѓСЃР»СѓРіРё</option>
+<option value="131" class="fjdpth1">&nbsp; &nbsp;  РџСЂРѕС‡РёРµ РѕР±СЉСЏРІР»РµРЅРёСЏ</option>
+<option value="18" class="fjdpth0"> РљР°Р»СЊСЏРЅРЅР°СЏ</option>
+<option value="31" class="fjdpth1">&nbsp; &nbsp;  РљР°Р»СЊСЏРЅРЅР°СЏ - РѕР±С‰РёР№ С„РѕСЂСѓРј</option>
+<option value="174" class="fjdpth1">&nbsp; &nbsp;  Р’РёРґРµРѕСЂРѕР»РёРєРё</option>
+<option value="169" class="fjdpth1">&nbsp; &nbsp;  РџРѕРіРѕРґР° Рё РїСЂРёСЂРѕРґР°</option>
+<option value="161" class="fjdpth1">&nbsp; &nbsp;  РђРІС‚РѕС„РѕСЂСѓРј</option>
+<option value="162" class="fjdpth1">&nbsp; &nbsp;  Р“Р°РґР¶РµС‚С‹</option>
+<option value="163" class="fjdpth1">&nbsp; &nbsp;  Р Р°Р·РЅС‹Рµ С…РѕР±Р±Рё</option>
+<option value="32" class="fjdpth1">&nbsp; &nbsp;  Р­Р№, Р°РґРјРёРЅ!</option>
+
+		</optgroup>
+		
+	</select><input type="submit" class="button" value="Р’РїРµСЂС‘Рґ">
+	</form>
+</div></td>
+</tr>
+</tbody></table>
+<!-- / forum jump -->
+
+
+<br>
+
+
+<p id="back-top" style="display: none;">
+<a href="#top"><span class="backtotop"></span>&nbsp;</a>
+</p>
+<br>
+<div class="smallfont timestyle" align="center">Р§Р°СЃРѕРІРѕР№ РїРѕСЏСЃ GMT +3, РІСЂРµРјСЏ: <span class="time">17:02</span>.</div>
+<br>
+
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- /content area table -->
+
+<form action="index.php" method="get" style="clear:left">
+
+<table cellpadding="6" cellspacing="0" border="0" width="100%" class="page footerselector" align="center">
+<tbody><tr>
+	
+		<td class="tfoot">
+			<select class="selectclass" name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="Р’С‹Р±РѕСЂ СЃС‚РёР»СЏ">
+					<option value="1" class="">-- Default Style</option>
+<option value="4" class="" selected="selected">-- Raceyouru</option>
+
+				</optgroup>
+			</select>
+		</td>
+	
+	
+		<td class="tfoot">
+			<select class="selectclass" name="langid" onchange="switch_id(this, 'lang')">
+				<optgroup label="Р’С‹Р±РѕСЂ СЏР·С‹РєР°">
+					<option value="1" class="">-- English (US)</option>
+<option value="2" class="" selected="selected">-- russian</option>
+
+				</optgroup>
+			</select>
+		</td>
+	
+	<td class="tfoot footselectorhide" align="right" width="100%">
+		<div class="smallfont">
+			<strong>
+				<a href="sendmessage.php?s=31eac0d5eec0a0fedf574341763a697e" rel="nofollow" accesskey="9">РћР±СЂР°С‚РЅР°СЏ СЃРІСЏР·СЊ</a> -
+				<a href="https://www.raceyou.ru">RaceYou! - Russian windsurfing community</a> -
+				
+				
+				<a href="archive/index.php">РђСЂС…РёРІ</a> -
+				
+				
+				
+				<a href="#top" onclick="self.scrollTo(0, 0); return false;">Р’РІРµСЂС…</a>
+			</strong>
+		</div>
+	</td>
+</tr>
+</tbody></table>
+
+<br>
+
+<div align="center" class="hidecopytext">
+	<div class="smallfont" align="center">
+	<!-- Do not remove this copyright notice -->
+	Powered by vBulletinВ® Copyright В©2000 - 2025, Jelsoft Enterprises Ltd. РџРµСЂРµРІРѕРґ: <noindex><a href="http://www.zcarot.com/">zCarot</a></noindex>
+	<!-- Do not remove this copyright notice -->
+	</div>
+
+	<div class="smallfont" align="center">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+
+	
+	</div>
+</div>
+
+</form>
+
+
+
+
+<script type="text/javascript">
+<!--
+	// Main vBulletin Javascript Initialization
+	vBulletin_init();
+//-->
+</script>
+
+<script type="text/javascript">
+var $=jQuery.noConflict();
+$(document).ready(function(){
+	// hide #back-top first
+	$("#back-top").hide();
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+});
+</script>
+<script type="text/javascript" src="https://www.raceyou.ru/images/raceyouru/js/fluidvids.js"></script>
+<script type="text/javascript">
+    fluidvids.init({
+      selector: ['iframe'],
+      players: ['www.youtube.com', 'player.vimeo.com', 'coub.com']
+    });
+</script>
+
+<p align="center">
+</p>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-144556533-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-144556533-1');
+</script><div class="spl"><img src="/images/ico_spl.gif" width="60" title="" alt=""><!--1112722899090--><div id="vuZ3_1112722899090"></div></div>
+
+
+</body></html>
