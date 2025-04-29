@@ -43,8 +43,8 @@ WebDriverWait(driver, 20).until(
 page_source = driver.page_source
 
 
-with open("raceyou.html", "w", encoding="utf-8") as f:
-    f.write(driver.page_source)
+# with open("raceyou.html", "w", encoding="utf-8") as f:
+#     f.write(driver.page_source)
 
 soup = BeautifulSoup(page_source, "lxml")
 
@@ -68,15 +68,15 @@ for tr in soup.find_all("tr"):
     list_piter_name=[]        
     # Выводим, если есть имя и город
     if username and city:
-        if city == "Санкт-Петербург"\
-        or city == "Питер"\
-        or city == "78"\
-        or city == "SPB"\
-        or city == "СПб"\
-        or city == "Спб"\
-        or city == "Spb"\
-        or city == "spb":
-            print(f"{username} — {city}")
-            list_piter_name=list_piter_name.append(username)
-    print(list_piter_name)
+        # if city == "Санкт-Петербург"\
+        # or city == "Питер"\
+        # or city == "78"\
+        # or city == "SPB"\
+        # or city == "СПб"\
+        # or city == "Спб"\
+        # or city == "Spb"\
+        # or city == "spb":
+        print(f"{username} — {city}")
+    #        list_piter_name=list_piter_name.append(username)
+   # print(list_piter_name)
 input("Нажми Enter для закрытия браузера...")
