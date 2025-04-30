@@ -1,14 +1,13 @@
-from func import autorization, find_names_Piter,CounterPages
+from http import cookies
+from func import autorization, find_names_Piter,CounterPages,count_namber_page_in_litera
 
+#if __name__=="__main__":
 
-
-
-if __name__=="__main__":
-
-    driver =autorization()
-    CounterPages(driver)
-    #find_names_Piter(driver)
+autorization()
+cookies,driver= autorization()
+count_namber_page_in_litera(cookies)    
+find_names_Piter(driver)
 
     #input(("Нажми Enter, когда закончишь..."))
-    driver.quit()
+    
 

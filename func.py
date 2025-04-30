@@ -12,16 +12,13 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def autorization():
     options = webdriver.ChromeOptions()
-    #options.add_argument('--disable-extensions')  # Отключение расширений
+    options.add_argument('--disable-extensions')  # Отключение расширений
     #options.add_argument('--headless')  # Запуск в фоновом режиме (без окна браузера)
     driver = webdriver.Chrome(options=options)
 
     url = f"https://raceyou.ru/memberlist.php?&pp=100&order=asc&sort=username&ltr=A&page=1"
 
-    # headers = {
-    # "accept":"*/*",
-    # "user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
-    # }
+    
 
     driver.get(url)
     # Найдём поля для ввода логина и пароля
@@ -37,17 +34,49 @@ def autorization():
 
     # Ждём несколько секунд для успешной авторизации
     time.sleep(2)
+    selenium_cookies = driver.get_cookies()
+    # Переводим cookies в формат для requests
+    session_cookies = {cookie['name']: cookie['value'] for cookie in selenium_cookies}
+
+    return session_cookies,driver
     
-    return driver
     
+def count_namber_page_in_litera(cookies):
 
+    url = f"https://raceyou.ru/memberlist.php?&pp=100&order=asc&sort=username&ltr=A&page=1"
+    # cookies = {    
+    #     "bbpassword":"5daad476b8e45e36ae45d0956e94efad",
+    #     "bbsessionhash":"4269eca55221a1b677cad9fe1795ec8b",
+    #     "bbuserid":"12638"
+    #     }
+    #cookies,driver = autorization() 
+                        
+    headers = {
+    "accept":"*/*",
+    "user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    }
 
+    req=requests.get(url,cookies=cookies,headers=headers,)
+    if req.status_code != 200:
+        print(f"Ошибка при загрузке страницы ") 
 
-# req=requests.get(url,cookies=cookies,headers=headers,)
-# if req.status_code != 200:
-#     print(f"Ошибка при загрузке страницы ") 
-# with open("raceyou.html","w", encoding="utf-8") as file:
-#     file.write(html)
+    src=req.text
+    soup = BeautifulSoup(src,"lxml")         
+    last_page_tag = soup.find("a", title=lambda t: t and "Последняя страница" in t)
+    namber_pages=0
+    if last_page_tag:
+        href = last_page_tag['href']  
+        page= re.search(r'page=(\d+)', href) # В href ищем цыфры после  page= 
+        if page:
+            namber_pages = int(page.group(1))
+            print("Номер последней страницы:", namber_pages)
+            # print(type(namber_pages))
+        else:
+            print("Не удалось найти номер страницы.")
+    else:
+        print("Не найден тег с последней страницей.")
+
+    return int(namber_pages)  
 
 
 def CounterPages(driver):
@@ -72,7 +101,8 @@ def CounterPages(driver):
     else:
         print("Не найден тег с последней страницей.")
 
-    return namber_pages    
+    return namber_pages
+        
   
 
 def find_names_Piter(driver):
@@ -101,14 +131,15 @@ def find_names_Piter(driver):
                 break            
         # Выводим, если есть имя и город
         if username and city:
-            if city == "Санкт-Петербург"\
-            or city == "Питер"\
-            or city == "78"\
-            or city == "SPB"\
-            or city == "СПб"\
-            or city == "Спб"\
-            or city == "Spb"\
-            or city == "spb":
+            if city in ("Санкт-Петербург",
+                        "Питер", 
+                        "78", 
+                        "СПб", 
+                        "Спб",
+                        "спб",
+                        "SPB",
+                        "Spb",
+                        "spb"):                
             # print(f"{username} — {city}")
                 list_piter_name.append(username)
     print(list_piter_name)
