@@ -41,7 +41,7 @@ def autorization():
     return session_cookies,driver
     
     
-def count_namber_page_in_litera(cookies):
+def count_reqests_page_in_litera(cookies):
 
     url = f"https://raceyou.ru/memberlist.php?&pp=100&order=asc&sort=username&ltr=A&page=1"
     # cookies = {    
@@ -66,7 +66,7 @@ def count_namber_page_in_litera(cookies):
     namber_pages=0
     if last_page_tag:
         href = last_page_tag['href']  
-        page= re.search(r'page=(\d+)', href) # В href ищем цыфры после  page= 
+        page= re.search(r'page=(\d+)', href) # В href ищем цифры после  page= 
         if page:
             namber_pages = int(page.group(1))
             print("Номер последней страницы:", namber_pages)
@@ -80,11 +80,12 @@ def count_namber_page_in_litera(cookies):
 
 
 def CounterPages(driver):
+    print(type(driver))
 
     WebDriverWait(driver, 20).until(
     EC.presence_of_all_elements_located((By.CLASS_NAME, "smallfont")) 
     )
-
+  
     src= driver.page_source
     soup = BeautifulSoup(src,"lxml")         
     last_page_tag = soup.find("a", title=lambda t: t and "Последняя страница" in t)
